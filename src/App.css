@@ -5,12 +5,42 @@
   text-align: center;
 }
 
-.app{
-  display:flex
+.app {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.app-title {
+  font-family: monospace;
+}
+.contact-info {
+  display:flex;
+  flex-direction: row;
+  width: 70vw;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.contact-info a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-logo {
+  max-width: 5rem;
 }
 .picture-of-the-day {
-  max-width: 80%;
+  max-width: 80vw;
   height: auto;
+}
+.picture-title {
+  font-family: fantasy;
+}
+.explanation {
+  font-family: monospace;
 }
 
 .logo {
