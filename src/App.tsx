@@ -60,6 +60,9 @@ function App() {
     <>
       <div id="app" className="app">
         <h1 className='app-title'>John Nelson</h1>
+          <p>
+            Find me online
+          </p>
         <div className='contact-info'>
           <a href="https://github.com/John4850" target="_blank">
             <img src={githubMark} className="contact-logo" alt="GitHub logo" />
@@ -75,9 +78,7 @@ function App() {
           </a>
         </div>
         <div className="card">
-          <p>
-            Contact info is posted at the top of the page.
-          </p>
+    
           <p>
             This is the first app I have built out with TypeScript
             so check back as I learn more and do  more.

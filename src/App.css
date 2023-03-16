@@ -23,11 +23,18 @@
   align-items: center;
   text-align: center;
   justify-content: space-evenly;
+  padding: auto;
 }
 .contact-info a {
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
+  font-family: monospace;
+  font-size: 1.5vmin;
+  margin: 1rem;
+  width: 20vw;
+  height: 20vw;
 }
 .contact-logo {
   max-width: 5rem;
