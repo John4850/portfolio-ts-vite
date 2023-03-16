@@ -4,7 +4,7 @@ import githubMark from './assets/github-mark-white.png'
 import linkedInLogo from './assets/LI-In-Bug.png'
 import instagramLogo from './assets/Instagram_Glyph_Gradient.png'
 import './App.css'
-import { useFetch } from './hooks/hooks';
+import { useFetch, useWindowSize } from './hooks/hooks';
 const avatarUrl = "https://last-airbender-api.fly.dev/api/v1/characters";
 const quoteUrl = "http://quotes.rest/quote/random.json";
 const nasaURL = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";
@@ -25,7 +25,7 @@ function App() {
   let [quoteData, setQuoteData] = useState<IQuoteData>();
   let [quoteString, setQuoteString] = useState<string>('Click the button to get a random Quote');
   let [pictureOfTheDay, setPictureOfTheDay] = useState<IPictureOfTheDay>();
-
+  let windowSize = useWindowSize();
   // let quoteClickHandler = () => {
   //   if (!quoteData) {
   //     useFetch(quoteUrl).then((res: IQuoteData) => setQuoteData(res))
@@ -47,10 +47,11 @@ function App() {
         src={pictureOfTheDay?.hdurl}
         alt={pictureOfTheDay?.explanation}
         className="img-of-the-day"
-        width={700} height={500}
+        width={1200} height={675}
         placeholderSrc={pictureOfTheDay?.url}
       />
       <h4>{pictureOfTheDay?.title}</h4>
+      <h5>{pictureOfTheDay?.explanation}</h5>
     </>
   )
 
