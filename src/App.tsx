@@ -1,29 +1,14 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
+import { useRandomAvatarCharacterArray } from './hooks/hooks';
 
 function App() {
   const [count, setCount] = useState(0);
-  let [randomAvatarArray] = 
+  const [randomAvatarArray] = useRandomAvatarCharacterArray();
 
-  const avatarApiAddress = "https://last-airbender-api.fly.dev/api/v1/characters";
-
-  function getRandomAvatarCharacter() {
-    return fetch(avatarApiAddress)
-    .then((response) => response.json())
-    .then((responseJson) => {
-      console.log(responseJson);
-      return responseJson;
-    })
-    .catch((error) => {
-      console.error(error);
-    });
- };
-
- getRandomAvatarCharacter();
-
-
-
+  console.log(randomAvatarArray);
+  
   return (
     <div className="App">
       <div>
