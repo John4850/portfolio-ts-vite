@@ -1,13 +1,15 @@
+import './App.css'
 import { useEffect, useState } from 'react'
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import githubMark from './assets/github-mark-white.png'
+import emailLogo from './assets/email.png'
 import linkedInLogo from './assets/LI-In-Bug.png'
 import instagramLogo from './assets/Instagram_Glyph_Gradient.png'
-import './App.css'
 import { useFetch, useWindowSize } from './hooks/hooks';
 const avatarUrl = "https://last-airbender-api.fly.dev/api/v1/characters";
 const quoteUrl = "http://quotes.rest/quote/random.json";
 const nasaURL = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";
+let email = 'JohnNelson4850@gmail.com';
 
 function App() {
   interface IQuoteData { data: any, loading: boolean, error: any }
@@ -43,35 +45,40 @@ function App() {
 
   let pictureElement = (
     <>
-      <LazyLoadImage
+      <img
         src={pictureOfTheDay?.hdurl}
         alt={pictureOfTheDay?.explanation}
         className="img-of-the-day"
-        width={1200} height={675}
-        placeholderSrc={pictureOfTheDay?.url}
+        width={windowSize[0] * .8} height={"auto"}
       />
-      <h4>{pictureOfTheDay?.title}</h4>
-      <h5>{pictureOfTheDay?.explanation}</h5>
+      <h4 className='picture-title'>{pictureOfTheDay?.title}</h4>
+      <h5 className='explanation'>{pictureOfTheDay?.explanation}</h5>
     </>
   )
 
   return (
     <>
-      <div id="app" className="App">
-        <div>
+      <div id="app" className="app">
+        <h1 className='app-title'>John Nelson</h1>
+        <div className='contact-info'>
           <a href="https://github.com/John4850" target="_blank">
-            <img src={githubMark} className="logo" alt="GitHub logo" />
-            https://github.com/John4850
+            <img src={githubMark} className="contact-logo" alt="GitHub logo" />
+            John4850
+          </a>
+          <a href={`mailto:${email}?subject=""}&body=""}`} target="_blank">
+            <img src={emailLogo} className="contact-logo" alt="GitHub logo" />
+            JohnNelson4850@gmail.com
           </a>
           <a href="https://www.linkedin.com/in/johnnelson4850/" target="_blank">
-            <img src={linkedInLogo} className="logo" alt="LinkedIn logo" />
-            https://www.linkedin.com/in/johnnelson4850/
+            <img src={linkedInLogo} className="contact-logo" alt="LinkedIn logo" />
+            JohnNelson4850
           </a>
         </div>
-        <h1>John Nelson</h1>
         <div className="card">
           <p>
-            Click on the GitHub and LinkedIn logos to learn more,
+            Contact info is posted at the top of the page.
+          </p>
+          <p>
             This is the first app I have built out with TypeScript
             so check back as I learn more and do  more.
           </p>
@@ -97,6 +104,18 @@ function App() {
 }
 
 export default App
+
+
+
+
+//LazyLoad template
+{/* <LazyLoadImage
+src={pictureOfTheDay?.hdurl}
+alt={pictureOfTheDay?.explanation}
+className="img-of-the-day"
+width={1200} height={675}
+placeholderSrc={pictureOfTheDay?.url}
+/> */}
 
 // NASA API endpoint
 // {
