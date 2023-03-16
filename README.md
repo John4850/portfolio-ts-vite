@@ -7,7 +7,8 @@ You can use the NPM  to try it yourself
 ***
 ``` $ npm create vite@latest ```
 ***
-It is very simple to figure out, and the full documentation is available at
+
+The full documentation is available at
 
 [https://vitejs.dev/guide/][viteDocs]
 
