@@ -68,7 +68,7 @@ function App() {
             <img src={githubMark} className="contact-logo" alt="GitHub logo" />
             John4850
           </a>
-          <a href={`mailto:${email}?subject=""}&body=""}`} target="_blank">
+          <a href={`mailto:${email} subject=""  body="" `} target="_blank">
             <img src={emailLogo} className="contact-logo" alt="GitHub logo" />
             JohnNelson4850@gmail.com
           </a>
