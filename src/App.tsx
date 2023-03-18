@@ -1,7 +1,7 @@
 import './App.css'
 import { useEffect, useState } from 'react'
 import githubMark from './assets/github-mark-white.png'
-import emailLogo from './assets/email.png'
+import emailLogo from './assets/gmail-logo.png'
 import linkedInLogo from './assets/LI-In-Bug.png'
 import instagramLogo from './assets/Instagram_Glyph_Gradient.png'
 import { useWindowSize } from './hooks/hooks';
@@ -57,40 +57,43 @@ function App() {
       <div id="app" className="app">
         <h1 className='app-title'>John Nelson</h1>
         <p>
-          Find me online
+
         </p>
         <div className='contact-info'>
           <a href="https://github.com/John4850" target="_blank">
-            <img src={githubMark} className="contact-logo" alt="GitHub logo" />
+            <img src={githubMark} className="contact-logo delay-1" alt="GitHub logo" />
             John4850
           </a>
           <a href={`mailto:${email} subject=""  body="" `} target="_blank">
-            <img src={emailLogo} className="contact-logo" alt="GitHub logo" />
+            <img src={emailLogo} className="contact-logo delay-2" alt="GitHub logo" />
             Gmail
           </a>
           <a href="https://www.linkedin.com/in/johnnelson4850/" target="_blank">
-            <img src={linkedInLogo} className="contact-logo" alt="LinkedIn logo" />
+            <img src={linkedInLogo} className="contact-logo delay-3" alt="LinkedIn logo" />
             JohnNelson4850
           </a>
         </div>
-          <p className="read-the-docs">A data visual tool I built for 
+        <p className="read-the-docs">A data visual tool I built for
           <a href="https://bffa.org/" target="_blank"> Better Future For All</a>
-          </p>
-          <iframe height="500px" width="100%" src="https://betterfutureforall.netlify.app/">
-            Your browser does not support embedded frames (iframes)
-            <a href="https://betterfutureforall.netlify.app/" target="_blank">further</a>
-          </iframe>
+        </p>
+        <iframe height="500px" width="100%" src="https://betterfutureforall.netlify.app/">
+          Your browser does not support embedded frames (iframes)
+          <a href="https://betterfutureforall.netlify.app/" target="_blank">further</a>
+        </iframe>
         <div className="card">
 
         </div>
         <div className='picture-of-the-day'>
-          <p className="read-the-docs">Heres a sample API call to grab a Picture of the Day from NASA's api.</p>
+          <p className="read-the-docs">Heres an API call to grab a Picture of the Day from NASA</p>
           <h3>NASA's Picture of the Day</h3>
           {pictureElement}
-          <p>You can find their API here</p>
-          <a href="https://api.nasa.gov/index.html" target="_blank">
-            https://api.nasa.gov/index.html
-          </a>
+          <div className='reference'>
+            <p>{`You can find their API at `}  
+              <a href="https://api.nasa.gov/index.html" target="_blank">
+                https://api.nasa.gov/index.html
+              </a>
+            </p>
+          </div>
         </div>
         <p>
           This portfolio the first app I have built using TypeScript,
@@ -100,7 +103,7 @@ function App() {
           check out the IG if you like dog pictures and reels, Zuko is really cute
         </p>
         <a href="https://www.instagram.com/johnnelson4850/" target="_blank">
-          <img src={instagramLogo} className="logo" alt="Instagram logo" />
+          <img src={instagramLogo} className="contact-logo" alt="Instagram logo" />
         </a>
       </div>
 
