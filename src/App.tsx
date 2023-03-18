@@ -79,13 +79,13 @@ function App() {
           </a>
         </div>
         <div className="card">
-
           <p>
             This is the first app I have built out with TypeScript
             so check back as I learn more and do  more.
           </p>
         </div>
         <div className='picture-of-the-day'>
+          <p className="read-the-docs">Heres a sample API call to grab a Picture of the Day from NASA's api.</p>
           <h3>NASA's Picture of the Day</h3>
           {pictureElement}
           <p>You can find their API here</p>
