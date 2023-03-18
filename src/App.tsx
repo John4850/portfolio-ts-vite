@@ -1,17 +1,13 @@
 import './App.css'
 import { useEffect, useState } from 'react'
-import { defineConfig, loadEnv } from 'vite';
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import githubMark from './assets/github-mark-white.png'
 import emailLogo from './assets/email.png'
 import linkedInLogo from './assets/LI-In-Bug.png'
 import instagramLogo from './assets/Instagram_Glyph_Gradient.png'
-import { useFetch, useWindowSize } from './hooks/hooks';
+import { useWindowSize } from './hooks/hooks';
 const baseUrl = import.meta.env.VITE_APP_NASA_BASE_URL
 const apiKey = import.meta.env.VITE_APP_NASA_API_KEY
 const nasaURL = `${baseUrl}${apiKey}`;
-// const quoteUrl = "http://quotes.rest/quote/random.json";
-// const avatarUrl = "https://last-airbender-api.fly.dev/api/v1/characters";
 
 let email = 'JohnNelson4850@gmail.com';
 
@@ -32,7 +28,6 @@ function App() {
   let [quoteString, setQuoteString] = useState<string>('Click the button to get a random Quote');
   let [pictureOfTheDay, setPictureOfTheDay] = useState<IPictureOfTheDay>();
   let windowSize = useWindowSize();
-
   useEffect(() => {
     fetch(nasaURL)
       .then((res) => res.json())
@@ -78,14 +73,18 @@ function App() {
             JohnNelson4850
           </a>
         </div>
+          <p className="read-the-docs">A data visual tool I built for 
+          <a href="https://bffa.org/" target="_blank"> Better Future For All</a>
+          </p>
+          <iframe height="500px" width="100%" src="https://betterfutureforall.netlify.app/">
+            Your browser does not support embedded frames (iframes)
+            <a href="https://betterfutureforall.netlify.app/" target="_blank">further</a>
+          </iframe>
         <div className="card">
 
-          <p>
-            This is the first app I have built out with TypeScript
-            so check back as I learn more and do  more.
-          </p>
         </div>
         <div className='picture-of-the-day'>
+          <p className="read-the-docs">Heres a sample API call to grab a Picture of the Day from NASA's api.</p>
           <h3>NASA's Picture of the Day</h3>
           {pictureElement}
           <p>You can find their API here</p>
@@ -93,14 +92,18 @@ function App() {
             https://api.nasa.gov/index.html
           </a>
         </div>
+        <p>
+          This portfolio the first app I have built using TypeScript,
+          so check back as I learn more and do  more.
+        </p>
         <p className="read-the-docs">
-          or check out the IG if you like Dog pictures and reels
+          check out the IG if you like dog pictures and reels, Zuko is really cute
         </p>
         <a href="https://www.instagram.com/johnnelson4850/" target="_blank">
           <img src={instagramLogo} className="logo" alt="Instagram logo" />
         </a>
-
       </div>
+
     </>
   )
 }
