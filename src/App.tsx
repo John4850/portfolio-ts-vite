@@ -44,12 +44,14 @@ function App() {
 
   let pictureElement = (
     <>
-      <img
-        src={pictureOfTheDay?.hdurl}
-        alt={pictureOfTheDay?.explanation}
-        className="img-of-the-day"
-        width={windowSize[0] * .8} height={"auto"}
-      />
+      <a href={pictureOfTheDay?.hdurl} target="_blank">
+        <img
+          src={pictureOfTheDay?.hdurl}
+          alt={pictureOfTheDay?.explanation}
+          className="img-of-the-day"
+          width={windowSize[0] * .8} height={"auto"}
+        />
+      </a>
       <h4 className='picture-title'>{pictureOfTheDay?.title}</h4>
       <h5 className='explanation'>{pictureOfTheDay?.explanation}</h5>
     </>
@@ -59,9 +61,9 @@ function App() {
     <>
       <div id="app" className="app">
         <h1 className='app-title'>John Nelson</h1>
-          <p>
-            Find me online
-          </p>
+        <p>
+          Find me online
+        </p>
         <div className='contact-info'>
           <a href="https://github.com/John4850" target="_blank">
             <img src={githubMark} className="contact-logo" alt="GitHub logo" />
@@ -69,7 +71,7 @@ function App() {
           </a>
           <a href={`mailto:${email} subject=""  body="" `} target="_blank">
             <img src={emailLogo} className="contact-logo" alt="GitHub logo" />
-            Gmail 
+            Gmail
           </a>
           <a href="https://www.linkedin.com/in/johnnelson4850/" target="_blank">
             <img src={linkedInLogo} className="contact-logo" alt="LinkedIn logo" />
@@ -77,7 +79,7 @@ function App() {
           </a>
         </div>
         <div className="card">
-    
+
           <p>
             This is the first app I have built out with TypeScript
             so check back as I learn more and do  more.
