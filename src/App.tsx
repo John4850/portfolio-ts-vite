@@ -7,13 +7,13 @@ import emailLogo from './assets/email.png'
 import linkedInLogo from './assets/LI-In-Bug.png'
 import instagramLogo from './assets/Instagram_Glyph_Gradient.png'
 import { useFetch, useWindowSize } from './hooks/hooks';
-const avatarUrl = "https://last-airbender-api.fly.dev/api/v1/characters";
-const quoteUrl = "http://quotes.rest/quote/random.json";
-const nasaURL = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";
-
+const baseUrl = import.meta.env.VITE_APP_NASA_BASE_URL
+const apiKey = import.meta.env.VITE_APP_NASA_API_KEY
+const nasaURL = `${baseUrl}${apiKey}`;
+// const quoteUrl = "http://quotes.rest/quote/random.json";
+// const avatarUrl = "https://last-airbender-api.fly.dev/api/v1/characters";
 
 let email = 'JohnNelson4850@gmail.com';
-// let nasaKey = process.env.VITE_APP_WEATHER_API_KEY
 
 function App() {
   interface IQuoteData { data: any, loading: boolean, error: any }
@@ -32,11 +32,6 @@ function App() {
   let [quoteString, setQuoteString] = useState<string>('Click the button to get a random Quote');
   let [pictureOfTheDay, setPictureOfTheDay] = useState<IPictureOfTheDay>();
   let windowSize = useWindowSize();
-  // let quoteClickHandler = () => {
-  //   if (!quoteData) {
-  //     useFetch(quoteUrl).then((res: IQuoteData) => setQuoteData(res))
-  //   }
-  // };
 
   useEffect(() => {
     fetch(nasaURL)
@@ -49,12 +44,14 @@ function App() {
 
   let pictureElement = (
     <>
-      <img
-        src={pictureOfTheDay?.hdurl}
-        alt={pictureOfTheDay?.explanation}
-        className="img-of-the-day"
-        width={windowSize[0] * .8} height={"auto"}
-      />
+      <a href={pictureOfTheDay?.hdurl} target="_blank">
+        <img
+          src={pictureOfTheDay?.hdurl}
+          alt={pictureOfTheDay?.explanation}
+          className="img-of-the-day"
+          width={windowSize[0] * .8} height={"auto"}
+        />
+      </a>
       <h4 className='picture-title'>{pictureOfTheDay?.title}</h4>
       <h5 className='explanation'>{pictureOfTheDay?.explanation}</h5>
     </>
@@ -64,9 +61,9 @@ function App() {
     <>
       <div id="app" className="app">
         <h1 className='app-title'>John Nelson</h1>
-          <p>
-            Find me online
-          </p>
+        <p>
+          Find me online
+        </p>
         <div className='contact-info'>
           <a href="https://github.com/John4850" target="_blank">
             <img src={githubMark} className="contact-logo" alt="GitHub logo" />
@@ -74,7 +71,7 @@ function App() {
           </a>
           <a href={`mailto:${email} subject=""  body="" `} target="_blank">
             <img src={emailLogo} className="contact-logo" alt="GitHub logo" />
-            Gmail 
+            Gmail
           </a>
           <a href="https://www.linkedin.com/in/johnnelson4850/" target="_blank">
             <img src={linkedInLogo} className="contact-logo" alt="LinkedIn logo" />
@@ -82,7 +79,7 @@ function App() {
           </a>
         </div>
         <div className="card">
-    
+
           <p>
             This is the first app I have built out with TypeScript
             so check back as I learn more and do  more.
