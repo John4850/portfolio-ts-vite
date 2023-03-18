@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background: radial-gradient(circle at bottom left,rgb(100, 0, 100) 5%,darkblue, black);
+  background: radial-gradient(circle at bottom left,rgb(100, 0, 100),darkblue, black);
   background-attachment: fixed;
 }
 
