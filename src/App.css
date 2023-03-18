@@ -1,11 +1,30 @@
+:root {
+  --color-text: black;
+  --color-background: radial-gradient(circle at bottom left,darkblue 5%, lightblue, rgb(255, 255, 255));
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: radial-gradient(circle at bottom left,rgb(100, 0, 100),darkblue, black);
+    --color-text: #dcb;
+  }
+
 #root {
+  color-scheme: light dark;
   width: 100vw;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background: radial-gradient(circle at bottom left,rgb(100, 0, 100),darkblue, black);
+  color: var(--color-text);
+  background: var(--color-background);
   background-attachment: fixed;
 }
+
+  .read-the-docs {
+    color: #888;
+  }
+}
+
 
 .app {
   display:flex;
@@ -74,6 +93,3 @@
   padding: 2em;
 }
 
-.read-the-docs {
-  color: #888;
-}
