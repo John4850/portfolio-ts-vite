@@ -7,13 +7,13 @@ import emailLogo from './assets/email.png'
 import linkedInLogo from './assets/LI-In-Bug.png'
 import instagramLogo from './assets/Instagram_Glyph_Gradient.png'
 import { useFetch, useWindowSize } from './hooks/hooks';
-const avatarUrl = "https://last-airbender-api.fly.dev/api/v1/characters";
-const quoteUrl = "http://quotes.rest/quote/random.json";
-const nasaURL = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";
-
+const baseUrl = import.meta.env.VITE_APP_NASA_BASE_URL
+const apiKey = import.meta.env.VITE_APP_NASA_API_KEY
+const nasaURL = `${baseUrl}${apiKey}`;
+// const quoteUrl = "http://quotes.rest/quote/random.json";
+// const avatarUrl = "https://last-airbender-api.fly.dev/api/v1/characters";
 
 let email = 'JohnNelson4850@gmail.com';
-// let nasaKey = process.env.VITE_APP_WEATHER_API_KEY
 
 function App() {
   interface IQuoteData { data: any, loading: boolean, error: any }
@@ -32,11 +32,6 @@ function App() {
   let [quoteString, setQuoteString] = useState<string>('Click the button to get a random Quote');
   let [pictureOfTheDay, setPictureOfTheDay] = useState<IPictureOfTheDay>();
   let windowSize = useWindowSize();
-  // let quoteClickHandler = () => {
-  //   if (!quoteData) {
-  //     useFetch(quoteUrl).then((res: IQuoteData) => setQuoteData(res))
-  //   }
-  // };
 
   useEffect(() => {
     fetch(nasaURL)
