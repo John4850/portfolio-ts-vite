@@ -13,7 +13,7 @@ const apiKey = import.meta.env.VITE_APP_NASA_API_KEY
 const nasaURL = `${baseUrl}${apiKey}`;
 
 const App: React.FC = () => {
-  
+
   //Used for setting Light and Dark mode;
   const [theme, setTheme] = useState<string>("");
   
@@ -29,11 +29,13 @@ const App: React.FC = () => {
   }, []);
 
   return (
+    <>
     <div id="app" className="app">
       <DarkMode theme={theme} setTheme={setTheme}/>
       <h1 className='app-title'> John Nelson </h1>
       <ContactInfo theme={theme}/>
       <div className="card">
+        <h3>Projects</h3>
         <BetterFuture/>
       </div>
       <DailyPicture pictureOfTheDay={pictureOfTheDay} />
@@ -48,6 +50,7 @@ const App: React.FC = () => {
         <img src={instagramLogo} className="contact-logo" alt="Instagram logo" />
       </a>
     </div>
+    </>
   )
 }
 
