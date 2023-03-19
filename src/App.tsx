@@ -3,21 +3,22 @@ import { useEffect, useState } from 'react'
 import { IQuoteData, IPictureOfTheDay } from './models/models'
 import DailyPicture from './components/DailyPicture'
 import ContactInfo from './components/ContactInfo'
+import BetterFuture from './components/BetterFuture'
+import DarkMode from './components/DarkMode'
 import instagramLogo from './assets/Instagram_Glyph_Gradient.png'
 import { useWindowSize } from './hooks/hooks';
-import BetterFuture from './components/BetterFuture'
+
 const baseUrl = import.meta.env.VITE_APP_NASA_BASE_URL
 const apiKey = import.meta.env.VITE_APP_NASA_API_KEY
 const nasaURL = `${baseUrl}${apiKey}`;
 
 const App: React.FC = () => {
-
-  let [buttonMessage, setButtonMessage] = useState<String>("dark");
-  let [quoteData, setQuoteData] = useState<IQuoteData>();
-  let [quoteString, setQuoteString] = useState<string>('Click the button to get a random Quote');
-  let [pictureOfTheDay, setPictureOfTheDay] = useState<IPictureOfTheDay>();
-  let windowSize = useWindowSize();
-
+  
+  //Used for setting Light and Dark mode;
+  const [theme, setTheme] = useState<string>("");
+  
+  //Fetches NASA's Picture of the Day
+  const [pictureOfTheDay, setPictureOfTheDay] = useState<IPictureOfTheDay>();
   useEffect(() => {
     fetch(nasaURL)
       .then((res) => res.json())
@@ -29,17 +30,18 @@ const App: React.FC = () => {
 
   return (
     <div id="app" className="app">
+      <DarkMode theme={theme} setTheme={setTheme}/>
       <h1 className='app-title'> John Nelson </h1>
-      <ContactInfo />
+      <ContactInfo theme={theme}/>
       <div className="card">
         <BetterFuture/>
       </div>
       <DailyPicture pictureOfTheDay={pictureOfTheDay} />
-      <p className="grey-text">
+      <p className="alt-text">
         This portfolio the first app I have built using TypeScript,
         so check back as I learn more and do  more.
       </p>
-      <p className="grey-text">
+      <p className="alt-text">
         IG for dog pictures and reels, Zuko is really cute 🐺
       </p>
       <a href="https://www.instagram.com/johnnelson4850/" target="_blank">

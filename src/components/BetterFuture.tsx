@@ -1,7 +1,7 @@
 
 const BetterFuture: React.FC = () => (
   <>
-    <p className="grey-text">A data visual tool I built for
+    <p className="alt-text">A data visual tool I built for
       <a href="https://bffa.org/" target="_blank"> Better Future For All</a>
     </p>
     <iframe height="500px" width="100%" src="https://betterfutureforall.netlify.app/">

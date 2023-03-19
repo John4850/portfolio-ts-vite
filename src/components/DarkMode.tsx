@@ -1,15 +1,24 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
-const App: React.FC = () => {
+interface Props {
+  theme: string;
+  setTheme: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const DarkMode: React.FC<Props> = ({ theme, setTheme }) => {
+
   useEffect(() => {
     const rootElement = document.querySelector('#root');
     if (rootElement) {
       const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
       if (prefersDarkMode) {
         rootElement.classList.add('dark');
+        setTheme("Light");
       } else {
         rootElement.classList.add('light');
+        setTheme("Dark");
       }
+      console.log(rootElement.classList)
     }
   }, []);
 
@@ -18,13 +27,16 @@ const App: React.FC = () => {
     if (rootElement) {
       rootElement.classList.toggle('dark');
       rootElement.classList.toggle('light');
+      setTheme(theme === "Light" ? "Dark" : "Light");
+      console.log(rootElement.classList);
     }
   };
-
+  let emoji:string = (theme == "Light") ? "💡" : "🕶️";
   return (
     <div>
-      <button onClick={toggleTheme}>Toggle Theme</button>
-      <h1>Hello, world!</h1>
+      <button className="theme-button" onClick={toggleTheme}>{`${emoji}${theme}-Mode`}</button>
     </div>
   );
 };
+
+export default DarkMode;
