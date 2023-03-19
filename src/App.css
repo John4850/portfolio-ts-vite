@@ -1,8 +1,8 @@
 
 #root {
   --color-text: black;
-  --color-background: radial-gradient(circle at bottom left, darkblue 5%, lightblue, rgb(255, 255, 255));
-  --alt-color-text: rgb(77, 0, 77);
+  --color-background: radial-gradient(circle at top right, rgb(143, 246, 222),lightblue,rgb(255, 255, 255), rgb(38, 45, 255));
+  --alt-color-text: rgb(100, 0, 0);
   --button-color:rgba(0, 0, 0, 0.5);
   --button-text: lightblue;
 
@@ -27,10 +27,17 @@
   color: var(--alt-color-text);
 }
 
+.button-wrapper {
+  position: absolute;
+  top: 1px;
+}
+
 .theme-button {
   background-color: var(--button-color);
-  font-size: 10pt;
-  color: var(--button-text)
+  font-size: 8pt;
+  color: var(--button-text);
+  border-radius: 2;
+  padding: 1px;
 }
 
 .app {
@@ -77,6 +84,19 @@
   filter: drop-shadow(0 0 2em #646cffaa);
 }
 
+.card {
+  width: 80%;
+  padding: 2px;
+}
+
+.project {
+  margin: 1rem;
+  padding: 2px 6px 0px 2px;
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.2)
+
+}
+
 .picture-of-the-day {
   width: 100%;
   height: auto;
@@ -97,11 +117,7 @@
 
 .reference {
   font-family: 'Times New Roman', Times, serif;
-  font-size: xx-small;
+  font-size: x-small;
 }
 
 @media (prefers-reduced-motion: no-preference) {}
-
-.card {
-  padding: 2em;
-}
