@@ -1,16 +1,15 @@
-:root {
+#root {
   --color-text: black;
   --color-background: radial-gradient(circle at bottom left,darkblue 5%, lightblue, rgb(255, 255, 255));
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  #root {
     --color-background: radial-gradient(circle at bottom left,rgb(100, 0, 100),darkblue, black);
     --color-text: #dcb;
   }
 
 #root {
-  color-scheme: light dark;
   width: 100vw;
   margin: 0 auto;
   padding: 2rem;
@@ -20,11 +19,16 @@
   background-attachment: fixed;
 }
 
-  .read-the-docs {
+  .grey-text {
     color: #888;
   }
 }
 
+body .dark-theme {
+  --color-text: black;
+  --color-background: radial-gradient(circle at bottom left,darkblue 5%, lightblue, rgb(255, 255, 255));
+
+};
 
 .app {
   display:flex;
@@ -66,7 +70,7 @@
 }
 
 .picture-of-the-day {
-  max-width: 80vw;
+  width: 100%;
   height: auto;
 }
 .picture-title {
