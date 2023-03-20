@@ -2,9 +2,10 @@
 #root {
   --color-text: black;
   --color-background: radial-gradient(circle at top right, rgb(143, 246, 222),lightblue,rgb(255, 255, 255), rgb(38, 45, 255));
-  --alt-color-text: rgb(100, 0, 0);
+  --alt-color-text: rgba(0, 0, 0, 0.662);
   --button-color:rgba(0, 0, 0, 0.5);
   --button-text: lightblue;
+  --border-color: rgb(0, 38, 255);
 
   width: 100vw;
   margin: 0 auto;
@@ -17,10 +18,11 @@
 
 #root.dark {
   --color-background: radial-gradient(circle at bottom left, rgb(100, 0, 100), darkblue, black);
-  --color-text: #dcb;
-  --alt-color-text: #888;
+  --color-text: white;
+  --alt-color-text: #ff9e9e;
   --button-color:rgba(255, 255, 255, 0.5);
   --button-text: black;
+  --border-color: lightblue;
 }
 
 .alt-text {
@@ -47,7 +49,7 @@
   align-items: center;
   text-align: center;
   justify-content: center;
-
+  font-family: Garamond;
 }
 
 .app-title {
@@ -61,7 +63,7 @@
   align-items: center;
   text-align: center;
   justify-content: space-evenly;
-
+  margin-bottom: 2em;
 }
 
 .contact-info a {
@@ -88,19 +90,27 @@
   display: flex;
   flex-direction: column;
   width: 98%;
+  border-radius: 10px;
+  background: #eeeeee25;
+  box-shadow: 2px -2px 5px -2px var(--border-color);
+}
+
+.project-header {
+  margin-top: .25em;
+  margin-bottom: .25em;
 }
 
 .project {
-  margin: 5px;
+  margin: .5em;
+  margin-bottom: 2em;
   padding: 2px 6px 0px 2px;
-  border: 1px solid black;
+  border: 1px solid var(--button-color);
+  border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.2)
 }
 .project p {
   margin: .5em;
 }
-
-
 
 .picture-of-the-day {
   width: 100%;

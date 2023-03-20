@@ -20,7 +20,7 @@ const App: React.FC = () => {
   //Fetches NASA's Picture of the Day
   const [pictureOfTheDay, setPictureOfTheDay] = useState<IPictureOfTheDay>();
   usePictureOfTheDay({ nasaUrl, setPictureOfTheDay });
-  console.log(pictureOfTheDay);
+
   return (
     <>
       <div id="app" className="app">
@@ -28,7 +28,7 @@ const App: React.FC = () => {
         <h1 className='app-title'> John Nelson </h1>
         <ContactInfo theme={theme} />
         <div className="card">
-          <h3>Projects</h3>
+          <h3 className='project-header'>Projects</h3>
           <BetterFuture />
         </div>
         <DailyPicture pictureOfTheDay={pictureOfTheDay} />
@@ -37,7 +37,7 @@ const App: React.FC = () => {
           so check back as I learn more and do  more.
         </p>
         <p className="alt-text">
-          IG for dog pictures and reels, Zuko is really cute 🐺
+          IG for dog pictures and reels {<br />} 🐺 Zuko is really cute
         </p>
         <a href="https://www.instagram.com/johnnelson4850/" target="_blank">
           <img src={instagramLogo} className="contact-logo" alt="Instagram logo" />

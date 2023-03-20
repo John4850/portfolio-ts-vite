@@ -5,7 +5,9 @@ interface Props {
 }
 
 const DailyPicture: React.FC<Props> = ({ pictureOfTheDay }) => {
+  //may be undefined if waiting on API
   if (pictureOfTheDay) {
+
     let videoFrame = (<iframe className="picture-of-the-day" height="500px" width="100%" src={pictureOfTheDay.url}></iframe>)
     let pictureFrame = (
       <a href={pictureOfTheDay.hdurl ? pictureOfTheDay.hdurl : pictureOfTheDay.url} target="_blank">
@@ -16,7 +18,7 @@ const DailyPicture: React.FC<Props> = ({ pictureOfTheDay }) => {
         />
       </a>
     );
-    let media = pictureOfTheDay.media_type;
+    let media = pictureOfTheDay.media_type; //Checks if media is a video or picture
     let displayedFrame = media === "video" ? videoFrame : pictureFrame;
 
     return (
