@@ -23,7 +23,7 @@ const DailyPicture: React.FC<Props> = ({ pictureOfTheDay }) => {
 
     return (
       <>
-        <div className='picture-of-the-day'>
+        <div className='picture-frame'>
           <p className="grey-text">Heres an API call to grab a Picture or Video of the Day from NASA</p>
           <h2>NASA's {media.charAt(0).toUpperCase() + media.slice(1)} of the Day</h2>
           {displayedFrame}
