@@ -28,7 +28,6 @@ const DarkMode: React.FC<Props> = ({ theme, setTheme }) => {
       rootElement.classList.toggle('dark');
       rootElement.classList.toggle('light');
       setTheme(theme === "Light" ? "Dark" : "Light");
-      console.log(rootElement.classList);
     }
   };
   let emoji:string = (theme == "Light") ? "💡" : "🕶️";
