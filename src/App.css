@@ -125,7 +125,7 @@
 
 .picture-title {
   font-family: fantasy;
-  margin-top: .5em;
+  margin-top: 1em;
   margin-bottom: 0;
   background-color: rgba(var(--button-color), 0.1);  
   border-radius: 10px 10px 0 0;
