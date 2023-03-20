@@ -8,7 +8,7 @@ const queryClient = new QueryClient()
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <QueryClientProvider client={queryClient} contextSharing={true} >
+    <QueryClientProvider client={queryClient} >
       <App />
     </QueryClientProvider>
   </React.StrictMode>,

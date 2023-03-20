@@ -31,7 +31,6 @@ const usePictureOfTheDay: React.FC<Props> = ({ nasaUrl, setPictureOfTheDay}) => 
     {
       refetchInterval: 24 * 60 * 60 * 1000, // Refetch once per day
       retry: 3, // Retry up to 3 times if request fails
-      cacheTime: 24 * 60 * 60 * 1000, // Cache for 24 hours
       onError: (error) => {
         console.error(error);
       },

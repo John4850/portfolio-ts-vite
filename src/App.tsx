@@ -20,7 +20,7 @@ const App: React.FC = () => {
   //Fetches NASA's Picture of the Day
   const [pictureOfTheDay, setPictureOfTheDay] = useState<IPictureOfTheDay>();
   usePictureOfTheDay({ nasaUrl, setPictureOfTheDay });
-
+  console.log(pictureOfTheDay);
   return (
     <>
       <div id="app" className="app">
