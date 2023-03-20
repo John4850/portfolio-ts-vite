@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
 
 #root {
   --color-text: black;
   --color-background: radial-gradient(circle at top right, rgb(143, 246, 222),lightblue,rgb(255, 255, 255), rgb(38, 45, 255));
   --alt-color-text: rgba(0, 0, 0, 0.662);
-  --button-color:rgba(0, 0, 0, 0.5);
+  --button-color: 0, 0, 0;
   --button-text: lightblue;
   --border-color: rgb(0, 38, 255);
 
@@ -20,7 +21,7 @@
   --color-background: radial-gradient(circle at bottom left, rgb(100, 0, 100), darkblue, black);
   --color-text: white;
   --alt-color-text: #ff9e9e;
-  --button-color:rgba(255, 255, 255, 0.5);
+  --button-color: 255, 255, 255;
   --button-text: black;
   --border-color: lightblue;
 }
@@ -35,8 +36,9 @@
 }
 
 .theme-button {
-  background-color: var(--button-color);
+  background-color: rgba(var(--button-color), 0.5);
   font-size: 8pt;
+  font-family: IBM Plex Sans;
   color: var(--button-text);
   border-radius: 2;
   padding: 1px;
@@ -49,11 +51,13 @@
   align-items: center;
   text-align: center;
   justify-content: center;
-  font-family: Garamond;
+  font-family: IBM Plex Sans;
 }
 
 .app-title {
-  font-family: monospace;
+  font-family: IBM Plex Sans;
+  font-size: 10vmin;
+  margin: 0.25em;
 }
 
 .contact-info {
@@ -111,17 +115,26 @@
 .project p {
   margin: .5em;
 }
-
+.picture-frame {
+  align-items: center;
+  justify-content: center;
+}
 .picture-of-the-day {
   width: 100%;
 }
 
 .picture-title {
   font-family: fantasy;
+  margin-top: .5em;
+  margin-bottom: 0;
+  background-color: rgba(var(--button-color), 0.1);  
+  border-radius: 10px 10px 0 0;
 }
 
 .explanation {
-  font-family: monospace;
+  margin-top: 0;
+  background-color: rgba(var(--button-color), 0.1);
+  border-radius: 0 0 10px 10px;
 }
 
 .logo {
