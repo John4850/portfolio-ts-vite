@@ -18,7 +18,6 @@ const DarkMode: React.FC<Props> = ({ theme, setTheme }) => {
         rootElement.classList.add('light');
         setTheme("Dark");
       }
-      console.log(rootElement.classList)
     }
   }, []);
 
