@@ -6,14 +6,12 @@ interface Props {
 
 const DailyPicture: React.FC<Props> = ({ pictureOfTheDay }) => {
   //may be undefined if waiting on API
-  
-  if (pictureOfTheDay) {
-    console.log(pictureOfTheDay);
 
+  if (pictureOfTheDay) {
     let videoFrame = (
       <>
         <iframe className="picture-of-the-day" height="500px" width="100%" src={pictureOfTheDay.url}></iframe>
-        <h6 className='copyright'>©{pictureOfTheDay.date.slice(0,4)} {pictureOfTheDay?.copyright}</h6>
+        <h6 className='copyright'>©{pictureOfTheDay.date.slice(0, 4)} {pictureOfTheDay?.copyright}</h6>
       </>
     )
 
@@ -25,7 +23,7 @@ const DailyPicture: React.FC<Props> = ({ pictureOfTheDay }) => {
             alt={pictureOfTheDay?.explanation}
             className="picture"
           />
-         <h6 className='copyright'>© {pictureOfTheDay.date.slice(0,4)} {pictureOfTheDay?.copyright}</h6>
+          <h6 className='copyright'>© {pictureOfTheDay.date.slice(0, 4)} {pictureOfTheDay?.copyright}</h6>
         </a>
       </div>
     );
