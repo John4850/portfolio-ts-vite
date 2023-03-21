@@ -2,7 +2,7 @@ export interface IQuoteData { data: any, loading: boolean, error: any }
 
 export interface IPictureOfTheDay {
   copyright: string,
-  date: Date,
+  date: string,
   explanation: string,
   hdurl?: string,
   media_type: string,
