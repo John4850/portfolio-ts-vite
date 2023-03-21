@@ -6,36 +6,49 @@ interface Props {
 
 const DailyPicture: React.FC<Props> = ({ pictureOfTheDay }) => {
   //may be undefined if waiting on API
+  
   if (pictureOfTheDay) {
+    console.log(pictureOfTheDay);
 
-    let videoFrame = (<iframe className="picture-of-the-day" height="500px" width="100%" src={pictureOfTheDay.url}></iframe>)
+    let videoFrame = (
+      <>
+        <iframe className="picture-of-the-day" height="500px" width="100%" src={pictureOfTheDay.url}></iframe>
+        <h6 className='copyright'>©{pictureOfTheDay.date.slice(0,4)} {pictureOfTheDay?.copyright}</h6>
+      </>
+    )
+
     let pictureFrame = (
-      <a href={pictureOfTheDay.hdurl ? pictureOfTheDay.hdurl : pictureOfTheDay.url} target="_blank">
-        <img
-          src={pictureOfTheDay.hdurl ? pictureOfTheDay.hdurl : pictureOfTheDay.url}
-          alt={pictureOfTheDay?.explanation}
-          className="picture-of-the-day"
-        />
-      </a>
+      <div className="picture-of-the-day" >
+        <a href={pictureOfTheDay.hdurl ? pictureOfTheDay.hdurl : pictureOfTheDay.url} target="_blank">
+          <img
+            src={pictureOfTheDay.hdurl ? pictureOfTheDay.hdurl : pictureOfTheDay.url}
+            alt={pictureOfTheDay?.explanation}
+            className="picture"
+          />
+         <h6 className='copyright'>© {pictureOfTheDay.date.slice(0,4)} {pictureOfTheDay?.copyright}</h6>
+        </a>
+      </div>
     );
+
     let media = pictureOfTheDay.media_type; //Checks if media is a video or picture
-    let displayedFrame = media === "video" ? videoFrame : pictureFrame;
+    let displayedFrame: JSX.Element = media === "video" ? videoFrame : pictureFrame; //Chooses the proper element
 
     return (
       <>
         <div className='picture-frame'>
-          <p className="grey-text">Heres an API call to grab a Picture or Video of the Day from NASA</p>
-          <h2>NASA's {media.charAt(0).toUpperCase() + media.slice(1)} of the Day</h2>
-          {displayedFrame}
-          <h4 className='picture-title'>{pictureOfTheDay?.title}</h4>
-          <h5 className='explanation'>{pictureOfTheDay?.explanation}</h5>
+          <h2 className="grey-text">Picture or Video of the Day from NASA's API</h2>
           <div className='reference'>
-            <p>{`You can find their API at `}
+            <p className="grey-text">I've always loved astronomy and staring at the stars, so NASA's Astronomy Image of the Day API seemed a logical start.</p>
+            <p>{`Let's query NASA's Rest API, you can find it at `}
               <a href="https://api.nasa.gov/index.html" target="_blank">
                 https://api.nasa.gov/index.html
               </a>
             </p>
           </div>
+          <h2>NASA's {media.charAt(0).toUpperCase() + media.slice(1)} of the Day</h2>
+          {displayedFrame}
+          <h4 className='picture-title'>{pictureOfTheDay?.title}</h4>
+          <h5 className='explanation'>{pictureOfTheDay?.explanation}</h5>
         </div>
       </>
     )
