@@ -2,7 +2,7 @@
 
 #root {
   --color-text: black;
-  --color-background: radial-gradient(circle at top right, rgb(143, 246, 222),lightblue,rgb(255, 255, 255), rgb(38, 45, 255));
+  --color-background: radial-gradient(circle at top right, rgb(143, 246, 222), lightblue, rgb(255, 255, 255), rgb(38, 45, 255));
   --alt-color-text: rgba(0, 0, 0, 0.662);
   --button-color: 0, 0, 0;
   --button-text: lightblue;
@@ -47,7 +47,6 @@
 .app {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -112,14 +111,23 @@
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.2)
 }
+
 .project p {
   margin: .5em;
 }
+
 .picture-frame {
   align-items: center;
   justify-content: center;
+  width: 98%;
+  margin-top: 2em;
+  padding: .25em;
+  border-radius: 10px;
+  background: #eeeeee25;
+  box-shadow: 2px -2px 5px -2px var(--border-color);
 }
-.picture-of-the-day {
+
+.picture {
   width: 100%;
 }
 
@@ -128,8 +136,13 @@
   margin-top: .5em;
   padding-top: 1em;
   margin-bottom: 0;
-  background-color: rgba(var(--button-color), 0.1);  
+  background-color: rgba(var(--button-color), 0.1);
   border-radius: 10px 10px 0 0;
+}
+
+.copyright {
+  margin-top: 0;
+  padding: 0;
 }
 
 .explanation {
