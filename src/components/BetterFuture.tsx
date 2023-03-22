@@ -4,9 +4,9 @@ const BetterFuture: React.FC = () => (
     <h3 className='project-header'><a href="https://bffa.org/" target="_blank"> Better Future For All 🔗</a></h3>
     <p className="grey-text">
       I used the 
-    <a href="https://www.socialprogress.org/framework" target="_blank"> SPI framework </a> 
+    <a href="http://www.socialprogress.org/framework" target="_blank"> SPI framework </a> 
     created by 
-    <a href="https://socialprogress.org/" target="_blank"> Social Progress Imperative </a> 
+    <a href="http://socialprogress.org/" target="_blank"> Social Progress Imperative </a> 
     to create intuitive tools for exploring data.</p>
     <div className="project">
       <p>Choropleth map and tooltip using React, D3, and lots of JavaScript</p>
