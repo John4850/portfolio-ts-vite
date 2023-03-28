@@ -93,7 +93,7 @@
 }
 
 .contact-logo {
-  width: 100%;
+  max-width: 100%;
 }
 
 .contact-logo:hover {
@@ -102,7 +102,7 @@
 
 .resume {
   max-width: 60px;
-  margin: 0.5em;
+  margin: 2em;
   font-family: 'Times New Roman', Times, serif;
   font-size: x-small;
   line-height: 75%;
