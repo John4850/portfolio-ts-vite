@@ -25,9 +25,12 @@ const App: React.FC = () => {
     <>
       <div id="app" className="app">
         <DarkMode theme={theme} setTheme={setTheme} />
-        <h1 className='app-title'> John Nelson </h1>
+        <h1 className='app-title animate glow'> John Nelson </h1>
+        <p className='tag-line animate glow delay-1'>
+          Software Engineer, Problem Solver
+        </p>
         <ContactInfo theme={theme} />
-        <div className="card">
+        <div className="card animate glow">
           <h3 className='project-header'>Projects</h3>
           <BetterFuture />
         </div>
@@ -40,7 +43,7 @@ const App: React.FC = () => {
           IG for dog pictures and reels {<br />} 🐺 Zuko is really cute
         </p>
         <a href="https://www.instagram.com/johnnelson4850/" target="_blank">
-          <img src={instagramLogo} className="contact-logo" alt="Instagram logo" />
+          <img src={instagramLogo} className="logo" alt="Instagram logo" />
         </a>
       </div>
     </>
