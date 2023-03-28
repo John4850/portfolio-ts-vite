@@ -183,6 +183,10 @@
   padding: 1.5em;
 }
 
+.logo:hover {
+  filter: drop-shadow(0 0 2em var(--border-color));
+}
+
 .reference {
   font-family: 'Times New Roman', Times, serif;
   font-size: x-small;
