@@ -72,15 +72,10 @@
   text-align: center;
   justify-content: space-evenly;
   margin-bottom: 2em;
-  max-width: 500px;
+  max-width: 80vw;
 }
 
-.contact-logo:before {
-  display: block;
-  padding-top: 100%;
-}
-
-.contact-info a {
+.contact-link {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -89,11 +84,18 @@
   font-size: 1.5vmin;
   margin: 1rem;
   padding: 1rem;
-  flex: 1 0 0;
+  flex: 1 1 0;
 }
 
+.contact-link:before {
+  display: block;
+  padding-top: 100%;
+}
+
+
 .contact-logo {
-  max-width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .contact-logo:hover {
@@ -123,6 +125,7 @@
   background: #eeeeee25;
   box-shadow: 2px -2px 5px -2px var(--border-color);
   padding: .5em;
+
 }
 
 .project-header {
@@ -131,6 +134,7 @@
 }
 
 .project {
+  scroll-snap-align: center;
   margin: .5em;
   margin-bottom: 2em;
   padding: 2px 6px 0px 2px;

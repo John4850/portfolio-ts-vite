@@ -21,13 +21,13 @@ const ContactInfo: React.FC<Props> = ({ theme }) => {
       </a>
     </div>
     <div id="" className="contact-info" >
-      <a href="https://github.com/John4850" target="_blank">
+      <a href="https://github.com/John4850" target="_blank" className="contact-link">
         <img src={theme == "Dark" ? githubMark : githubMarkWhite} className="contact-logo animate glow delay-3" alt="GitHub logo" />
       </a>
-      <a href={`mailto:${email} subject=""  body="" `} target="_blank">
+      <a href={`mailto:${email} subject=""  body="" `} target="_blank" className="contact-link">
         <img src={emailLogo} className="contact-logo animate glow delay-4" alt="GitHub link" />
       </a>
-      <a href="https://www.linkedin.com/in/johnnelson4850/" target="_blank">
+      <a href="https://www.linkedin.com/in/johnnelson4850/" target="_blank" className="contact-link">
         <img src={linkedInLogo} className="contact-logo animate glow delay-5" alt="LinkedIn link" />
       </a>
     </div>
