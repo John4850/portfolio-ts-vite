@@ -40,8 +40,9 @@ const App: React.FC = () => {
         </div>
         <DailyPicture pictureOfTheDay={pictureOfTheDay} />
         <p className="alt-text">
-          <span>In my personal life, I spend a lot of time with dogs and being outdoors. </span>
-          You can find me out on the trails around PDX with Zuko
+          <span>In my personal life I spend as much time as I can outside with my dog, Zuko. </span>
+          You can find us out on the trails around PDX, we're always looking for hiking buddies.
+          Other hobbies include tending my houseplants, building Lego, and I love snow sports, especially skijoring.
         </p>
         <p className="alt-text">
           Want to know more? Let's connect!
@@ -49,9 +50,10 @@ const App: React.FC = () => {
         <ContactInfo theme={theme} isVisible={isVisible} myRef={ref}/>
 
       </div>
-        <p className="alt-text">
-          This portfolio is built using TypeScript, React, and assembled with Vite. 
+        <p className="footer">
+          This <a href="https://github.com/John4850/portfolio-ts-vite" target="_blank">Portfolio</a> is built using TypeScript, React, and assembled with Vite. 
           Check back as I learn more and do  more.
+          
         </p>
     </>
   )
