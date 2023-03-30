@@ -1,6 +1,6 @@
 import './App.css'
-import { useEffect, useState } from 'react'
-import { IQuoteData, IPictureOfTheDay } from './models/models'
+import { useState } from 'react'
+import { IPictureOfTheDay } from './models/models'
 import DailyPicture from './components/DailyPicture'
 import ContactInfo from './components/ContactInfo'
 import BetterFuture from './components/BetterFuture'
@@ -29,23 +29,28 @@ const App: React.FC = () => {
         <p className='tag-line animate glow delay-1'>
           Software Engineer, Problem Solver
         </p>
-        <ContactInfo theme={theme} />
+
+          <h2 className='project-header'>Projects</h2>
         <div className="card animate glow">
-          <h3 className='project-header'>Projects</h3>
           <BetterFuture />
         </div>
         <DailyPicture pictureOfTheDay={pictureOfTheDay} />
         <p className="alt-text">
-          This portfolio the first app I have built using TypeScript,
-          so check back as I learn more and do  more.
+          <span>In my personal life, I spend a lot of time with dogs and being outdoors. </span>
+          You can find me out on the trails around PDX with Zuko
         </p>
         <p className="alt-text">
-          IG for dog pictures and reels {<br />} 🐺 Zuko is really cute
+          Want to know more? Let's connect!
         </p>
+        <ContactInfo theme={theme} />
         <a href="https://www.instagram.com/johnnelson4850/" target="_blank">
           <img src={instagramLogo} className="logo" alt="Instagram logo" />
         </a>
       </div>
+        <p className="alt-text">
+          This portfolio is built using TypeScript, React, and assembled with Vite. 
+          Check back as I learn more and do  more.
+        </p>
     </>
   )
 }

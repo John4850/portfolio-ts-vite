@@ -3,7 +3,7 @@
 #root {
   --color-text: black;
   --color-background: radial-gradient(circle at top right, rgb(143, 246, 222), lightblue, rgb(255, 255, 255), rgb(38, 45, 255));
-  --alt-color-text: rgba(0, 0, 0, 0.662);
+  --alt-color-text: rgb(59, 0, 33);
   --button-color: 0, 0, 0;
   --button-text: lightblue;
   --border-color: rgb(0, 38, 255);
@@ -19,7 +19,7 @@
 
 #root.dark {
   --color-background: radial-gradient(circle at bottom left, rgb(100, 0, 100), darkblue, black);
-  --color-text: white;
+  --color-text: rgb(255, 225, 250);
   --alt-color-text: #ff9e9e;
   --button-color: 255, 255, 255;
   --button-text: black;
@@ -82,20 +82,23 @@
   justify-content: center;
   font-family: monospace;
   font-size: 1.5vmin;
-  margin: 1rem;
-  padding: 1rem;
+  margin: 1.5rem;
   flex: 1 1 0;
+
 }
 
 .contact-link:before {
   display: block;
   padding-top: 100%;
+
 }
 
 
 .contact-logo {
   height: 100%;
   width: 100%;
+  min-width: 60px;
+  max-height: 124px;
 }
 
 .contact-logo:hover {
@@ -103,11 +106,7 @@
 }
 
 .resume {
-  max-width: 60px;
-  margin: 2em;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: x-small;
-  line-height: 75%;
+  max-width: 75px;
 }
 
 .resume-logo {
@@ -123,7 +122,7 @@
   width: 98%;
   border-radius: 10px;
   background: #eeeeee25;
-  box-shadow: 2px -2px 5px -2px var(--border-color);
+  box-shadow: 2px -2px 5px -2px var(--border-color), 2px -2px 5px -2px var(--border-color);
   padding: .5em;
 
 }

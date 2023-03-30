@@ -17,7 +17,6 @@ const ContactInfo: React.FC<Props> = ({ theme }) => {
     <div className='resume animate glow delay-2'>
       <a href="https://drive.google.com/file/d/1erporqoScv8UuoXKucAd5JxeElHaMYNP/view?usp=sharing" target="_blank">
         <img src={theme == "Dark" ? resume : resumeWhite} className="resume-logo" alt="Resume link" />
-        Resume
       </a>
     </div>
     <div id="" className="contact-info" >
