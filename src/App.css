@@ -72,7 +72,6 @@
   align-items: center;
   text-align: center;
   justify-content: space-evenly;
-  margin-bottom: 2em;
   max-width: 80vw;
 }
 
@@ -85,7 +84,6 @@
   font-size: 1.5vmin;
   margin: 1.5rem;
   flex: 1 1 0;
-
 }
 
 .contact-link:before {
@@ -93,7 +91,6 @@
   padding-top: 100%;
 
 }
-
 
 .contact-logo {
   height: 100%;
@@ -123,9 +120,8 @@
   width: 98%;
   border-radius: 10px;
   background: #eeeeee25;
-  box-shadow: 2px -2px 5px -2px var(--border-color), 2px -2px 5px -2px var(--border-color);
+  box-shadow: 2px -2px 5px -2px var(--border-color), -2px 2px 5px -2px var(--alt-color-text);
   padding: .5em;
-
 }
 
 .project-header {
@@ -155,7 +151,7 @@
   padding: .25em;
   border-radius: 10px;
   background: #eeeeee25;
-  box-shadow: 2px -2px 5px -2px var(--border-color);
+  box-shadow: 2px -2px 5px -2px var(--border-color), -2px 2px 5px -2px var(--alt-color-text);
 }
 
 .picture {
@@ -189,6 +185,7 @@
 
 .logo:hover {
   filter: drop-shadow(0 0 2em var(--border-color));
+  
 }
 
 .reference {
@@ -233,10 +230,10 @@
   animation-delay: 0.8s;
 }
 .delay-4 {
-  animation-delay: 1.0s;
+  animation-delay: 0.9s;
 }
 .delay-5 {
-  animation-delay: 1.2s;
+  animation-delay: 1.0s;
 }
 
 @media (prefers-reduced-motion: no-preference) {}
