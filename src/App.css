@@ -55,6 +55,17 @@
   font-family: IBM Plex Sans;
 }
 
+.app a:link {
+  color: var(--alt-color-text);}
+
+.app a:visited {
+  color: var(--color-text);
+}
+
+.app a:hover {
+  color: hotpink;
+}
+
 .app-title {
   font-family: IBM Plex Sans;
   font-size: 10vmin;
@@ -137,6 +148,7 @@
   margin-bottom: 2em;
   padding: 2px 6px 0px 2px;
   border: 1px solid var(--button-color);
+  box-shadow: 1px -1px 2px -1px var(--border-color), -1px 1px 2px -1px var(--alt-color-text);
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.2)
 }
