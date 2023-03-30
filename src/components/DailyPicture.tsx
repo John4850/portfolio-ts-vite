@@ -34,7 +34,7 @@ const DailyPicture: React.FC<Props> = ({ pictureOfTheDay }) => {
     return (
       <>
         <div className='picture-frame'>
-          <h2 className="grey-text">Picture or Video of the Day from NASA's API</h2>
+          <h2 className="grey-text">{media.charAt(0).toUpperCase() + media.slice(1)} of the Day from NASA's API</h2>
           <div className='description'>
             <p className="grey-text">I've always loved astronomy and staring at the stars, so NASA's Astronomy Image of the Day API seemed a logical start.</p>
             <p>{`Let's query NASA's Rest API, you can find it at `}
