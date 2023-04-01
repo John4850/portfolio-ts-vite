@@ -36,11 +36,18 @@ const DailyPicture: React.FC<Props> = ({ pictureOfTheDay }) => {
         <div className='picture-frame'>
           <h2 className="grey-text">{media.charAt(0).toUpperCase() + media.slice(1)} of the Day from NASA's API</h2>
           <div className='description'>
-            <p className="grey-text">I've always loved astronomy and staring at the stars, so NASA's Astronomy Image of the Day API seemed a logical start.</p>
-            <p>{`Let's query NASA's Rest API, you can find it at `}
+            <p className="grey-text">Whats not to love about staring at the stars and ultra hd images of them?</p>
+            <p>{`Let's query NASA's Rest API, it can be found at `}
               <a href="https://api.nasa.gov/index.html" target="_blank">
-                https://api.nasa.gov/index.html
+                https://api.nasa.gov/index.html 
               </a>
+            </p>
+            <p className="alt-text">
+              This site uses 
+              <a href="https://tanstack.com/query/latest" target="_blank">
+             {' @tanstack/react-query '}
+              </a>
+              in place of a vanilla fetch request
             </p>
           </div>
           <h2>NASA's {media.charAt(0).toUpperCase() + media.slice(1)} of the Day</h2>
