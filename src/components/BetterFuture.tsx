@@ -13,9 +13,11 @@ const BetterFuture: React.FC = () => (
       <h3>Choropleth map and tooltip using React, D3, and lots of JavaScript</h3>
       <p className="grey-text">I was inspired by
         <a href="https://shirleywu.studio/filmflowers/" target="_blank"> Shirley Wu's Film Flowers </a>
-        where she uses IMDB ratings and D3 to create a flower petal concept.
-        Taking that a step further, I created a dynamic tooltip and choropleth map.
-        Each of the tooltip's petal size is scaled accurately, and its corresponding subcategories bloom to represent the data.
+        Using D3 and IMDB to create dynamic flower petals.
+      </p>  
+      <p className="grey-text">
+        Dynamic tooltip and Choropleth Map.
+        Each of the tooltip's petal size is scaled accurately to the corresponding subcategories.
       </p>
       <iframe height="500px" width="100%" src="https://betterfutureforall.netlify.app/">
         Your browser does not support embedded frames (iFrames)
