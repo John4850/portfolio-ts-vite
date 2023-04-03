@@ -51,7 +51,6 @@ const App: React.FC = () => {
         <p className="footer">
           This <a href="https://github.com/John4850/portfolio-ts-vite" target="_blank">Portfolio</a> is built using TypeScript, React, and assembled with Vite. 
           Check back as I learn more and do  more.
-          
         </p>
       </div>
     </>
