@@ -3,7 +3,7 @@
 
 #root {
   --color-text: black;
-  --color-background: radial-gradient(circle at top right, rgb(143, 246, 222), lightblue, rgb(255, 255, 255), rgb(38, 45, 255));
+  --color-background: radial-gradient(circle at bottom center, rgb(143, 246, 222), lightblue, rgb(255, 255, 255), rgb(95, 100, 255));
   --alt-color-text: rgb(59, 0, 33);
   --button-color: 0, 0, 0;
   --button-text: lightblue;
@@ -19,7 +19,7 @@
 }
 
 #root.dark {
-  --color-background: radial-gradient(circle at bottom left, rgb(100, 0, 100), darkblue, black);
+  --color-background: radial-gradient(circle at bottom center, rgb(100, 0, 100), rgb(50, 0, 75), rgb(0, 0, 100), black);
   --color-text: rgb(255, 225, 250);
   --alt-color-text: #ff9e9e;
   --button-color: 255, 255, 255;
@@ -244,23 +244,23 @@
 }
 
 .delay-1 {
-  animation-delay: 0.6s;
+  animation-delay: 0.1s;
 }
 
 .delay-2 {
-  animation-delay: 0.7s;
+  animation-delay: 0.2s;
 }
 
 .delay-3 {
-  animation-delay: 0.8s;
+  animation-delay: 0.3s;
 }
 
 .delay-4 {
-  animation-delay: 0.9s;
+  animation-delay: 0.4s;
 }
 
 .delay-5 {
-  animation-delay: 1.0s;
+  animation-delay: 0.5s;
 }
 
 @media (prefers-reduced-motion: no-preference) {}
