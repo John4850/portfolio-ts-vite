@@ -31,7 +31,7 @@ const App: React.FC = () => {
         <DarkMode theme={theme} setTheme={setTheme} />
         <h1 className='app-title animate glow'> John Nelson </h1>
         <p className='tag-line animate glow delay-1'>
-          Software Engineer, Problem Solver
+          Software engineer, problem solver
         </p>
 
         <h2 className='project-header animate glow delay-2'>Projects</h2>

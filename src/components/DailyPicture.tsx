@@ -36,7 +36,7 @@ const DailyPicture: React.FC<Props> = ({ pictureOfTheDay }) => {
         <div className='picture-frame'>
           <h2 className="grey-text">{media.charAt(0).toUpperCase() + media.slice(1)} of the Day from NASA's API</h2>
           <div className='description'>
-            <p className="grey-text">Whats not to love about staring at the stars and ultra hd images of them?</p>
+            <p className="grey-text">What's not to love about staring at the stars and ultra hd images of them?</p>
             <p>
               <a href="https://api.nasa.gov/index.html" target="_blank">
                 https://api.nasa.gov/index.html 
