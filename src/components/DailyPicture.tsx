@@ -37,21 +37,26 @@ const DailyPicture: React.FC<Props> = ({ pictureOfTheDay }) => {
           <div className='description'>
             <p className="grey-text">What's not to love about staring at the stars and ultra hd images of them?</p>
             <p>
-              <a href="https://api.nasa.gov/index.html" target="_blank">
-                https://api.nasa.gov/index.html 
-              </a>
-            </p>
-            <p className="alt-text">
-              <a href="https://tanstack.com/query/latest" target="_blank">
-             {' @tanstack/react-query '}
-              </a>
-              to make the request.
+
             </p>
           </div>
           <h2>NASA's {media.charAt(0).toUpperCase() + media.slice(1)} of the Day</h2>
           {displayedFrame}
           <h4 className='picture-title'>{pictureOfTheDay?.title}</h4>
           <h5 className='explanation'>{pictureOfTheDay?.explanation}</h5>
+          <p className="alt-text">
+              Example API call made to 
+              <br />
+              <a href="https://api.nasa.gov/index.html" target="_blank">
+                https://api.nasa.gov/index.html 
+              </a>
+              <br />
+              using
+              <br />
+              <a href="https://tanstack.com/query/latest" target="_blank">
+             Tanstack / react-query
+              </a>
+            </p>
         </div>
       </>
     )
