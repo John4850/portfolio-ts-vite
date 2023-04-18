@@ -17,18 +17,21 @@ const BetterFuture: React.FC = () => (
       <p className="grey-text">
        D3.js map and tooltip for viewing scores at a glance.
       </p>
+      <a href="https://betterfutureforall.netlify.app/" title="open in new window" target="_blank">🔗</a> 
       <iframe height="500px" width="100%" src="https://betterfutureforall.netlify.app/">
         Your browser does not support embedded frames (iFrames)
         <a href="https://betterfutureforall.netlify.app/" target="_blank">further</a>
       </iframe>
     </div>
-
     <div className="project">
       <h3>React.js Stamp-Book, Definitions and Sources </h3>
       <p className="grey-text">
-       React Stamp-Book with physical version available. Artwork by
+       React Stamp-Book with physical version available at <a href="https://bffa.org/" target="_blank"> BFFA.org</a>. 
+       <br />
+       Artwork by
         <a href="https://www.gingeryartistry.com/" target="_blank"> Jannah Minnix, </a>
       </p>
+      <a href="https://bffa-definitions.netlify.app/" title="open in new window" target="_blank">🔗</a> 
       <iframe height="500px" width="100%" src="https://bffa-definitions.netlify.app/">
         Your browser does not support embedded frames (iFrames)
         <a href="https://betterfutureforall.netlify.app/" target="_blank">further</a>
