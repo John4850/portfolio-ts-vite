@@ -27,6 +27,7 @@ const App: React.FC = () => {
 
   return (
     <>
+    <div className='background'></div>
       <div id="app" className="app">
         <DarkMode theme={theme} setTheme={setTheme} />
         <h1 className='app-title animate glow'> John Nelson </h1>
