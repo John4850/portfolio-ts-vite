@@ -8,7 +8,7 @@
   --button-color: 0, 0, 0;
   --button-text: lightblue;
   --border-color: rgb(0, 38, 255);
-  --background-gradient: rgba(255, 255, 255, 0.2);
+  --background-gradient: 255, 255, 255;
   width: 100vw;
   margin: 0;
   text-align: center;
@@ -21,7 +21,7 @@
   --button-color: 255, 255, 255;
   --button-text: black;
   --border-color: lightblue;
-  --background-gradient: rgba(0, 0, 0, 0.2);
+  --background-gradient: 0, 0, 0;
 }
 
 .background {
@@ -44,7 +44,9 @@
   padding: 2rem;
   color: var(--color-text);
 }
-
+iframe {
+  border-radius: 10px;
+}
 .alt-text {
   margin-left: auto;
   margin-right: auto;
@@ -154,7 +156,7 @@
   flex-direction: column;
   width: 98%;
   border-radius: 10px;
-  background: var(--background-gradient);
+  background: rgba(var(--background-gradient), .3);
   box-shadow: 2px -2px 5px -2px var(--border-color), -2px 2px 5px -2px var(--alt-color-text);
   padding: .5em;
 }
@@ -172,7 +174,7 @@
   border: 1px solid var(--button-color);
   box-shadow: 1px -1px 2px -1px var(--border-color), -1px 1px 2px -1px var(--alt-color-text);
   border-radius: 10px;
-  background-color: var(--background-gradient);
+  background-color: rgba(var(--background-gradient), .3);
 }
 
 .project p {
@@ -188,7 +190,7 @@
   margin-bottom: 2em;
   padding: .25em;
   border-radius: 10px;
-  background: #eeeeee25;
+  background: rgba(var(--background-gradient), .3);
   box-shadow: 2px -2px 5px -2px var(--border-color), -2px 2px 5px -2px var(--alt-color-text);
 }
 
@@ -197,25 +199,25 @@
   border-radius: 5px;
 }
 
+.picture-text{
+  background-color: rgba(var(--background-gradient), .6);
+  border-radius: 10px;
+}
+
 .picture-title {
   margin-top: .5em;
   padding-top: 1em;
-  margin-bottom: 0;
-  background-color: rgba(var(--button-color), 0.1);
-  border-radius: 10px 10px 0 0;
-}
-
-.copyright {
-  margin-top: 0;
-  padding: 0;
 }
 
 .explanation {
   font-family: Tillana;
   margin-top: 0;
   padding: 1em;
-  background-color: rgba(var(--button-color), 0.1);
-  border-radius: 0 0 10px 10px;
+}
+
+.copyright {
+  margin-top: 0;
+  padding: 0;
 }
 
 .logo {

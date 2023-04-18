@@ -42,8 +42,10 @@ const DailyPicture: React.FC<Props> = ({ pictureOfTheDay }) => {
           </div>
           <h2>NASA's {media.charAt(0).toUpperCase() + media.slice(1)} of the Day</h2>
           {displayedFrame}
+          <div className="picture-text">
           <h4 className='picture-title'>{pictureOfTheDay?.title}</h4>
           <h5 className='explanation'>{pictureOfTheDay?.explanation}</h5>
+          </div>
           <p className="alt-text">
               Example API call made to 
               <br />
