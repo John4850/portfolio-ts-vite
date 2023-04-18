@@ -5,9 +5,8 @@ interface Props {
 }
 
 const DailyPicture: React.FC<Props> = ({ pictureOfTheDay }) => {
-  //may be undefined if waiting on API
-
-  if (pictureOfTheDay) {
+  
+  if (pictureOfTheDay) { //may be undefined if waiting on API
     let videoFrame = (
       <>
         <iframe className="picture-of-the-day" height="500px" width="100%" src={pictureOfTheDay.url}></iframe>
