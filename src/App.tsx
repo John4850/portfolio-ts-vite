@@ -40,8 +40,10 @@ const App: React.FC = () => {
         </div>
         <DailyPicture pictureOfTheDay={pictureOfTheDay} />
         <p className="alt-text">
-          <span>In my personal life I spend as much time as I can outside with my dog, Zuko. </span>
+          In my personal life I spend as much time as I can outside with my dog, Zuko. 
+          <br />
           You can find us out on the trails around PDX, we're always looking for hiking buddies.
+          <br />
           Other hobbies include tending my houseplants, building Lego, and I love snow sports, especially skijoring.
         </p>
         <p className="alt-text">

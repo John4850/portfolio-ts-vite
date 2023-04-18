@@ -28,6 +28,7 @@
 }
 
 .alt-text {
+  max-width: 600px;
   color: var(--alt-color-text);
 }
 
