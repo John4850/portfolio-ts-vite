@@ -6,7 +6,7 @@ const AboutMe: React.FC<Props> = ({ theme }) => {
 
   const DESCRIPTION_TEXT =
     <ul className="about-me-list" >
-      <li>{"🎓 Completed a professional software development bootcamp at Alchemy Code Labs in 2019"}</li>
+      <li>{"🎓 Completed a professional software development bootcamp at Alchemy Code Lab in 2019"}</li>
       <li>{"🧑🏼‍💻 Worked as the lead software engineer at"}{<a href="https://bffa.org/" target="_blank">{" BFFA.org"}</a>}{" creating intuitive user interfaces"}</li>
       <li>{"⛑ Former FireFighter, EMT-Paramedic, and Emergency Room Technician"}</li>
       <li>{"🐕‍🦺 Training a rescued husky malamute mix named Zuko for therapy"}</li>
