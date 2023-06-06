@@ -20,7 +20,7 @@ const BetterFuture: React.FC = () => (
 
       <div className="project">
         <a href="https://betterfutureforall.netlify.app/" title="open in new window" target="_blank">
-          <h3>{"🗺 Choropleth Map and Tooltip ⚙️"}</h3>
+          <h3>{"⚙️ Choropleth Map and Tooltip "}</h3>
         </a>
         <p className="grey-text">
           {"View scores from around the world at a glance"}
@@ -42,7 +42,7 @@ const BetterFuture: React.FC = () => (
       
       <div className="project">
         <a href="https://bffa-definitions.netlify.app/" title="open in new window" target="_blank">
-          <h3>{"🖼 Definitions Stamp-Book 📖"}</h3>
+          <h3>{"📖 Definitions Stamp-Book"}</h3>
         </a>
         <p className="grey-text">
           {"Stamp-Book for exploring the definitions and their sources, physical version available at "}
