@@ -21,7 +21,7 @@ const AboutMe: React.FC<Props> = ({ theme }) => {
   return (
     <>
       <div className='about-me card animate glow delay-2'>
-        <h2 >{"About Me"}</h2>
+        <h2>{"About Me"}</h2>
         {DESCRIPTION_TEXT}
       </div>
     </>

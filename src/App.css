@@ -59,14 +59,26 @@ iframe {
 .about-me h2 {
   margin-bottom: 0;
 }
-.about-me-list{
+
+.about-me {
+  align-items: center;
+  margin-top: 0;
+}
+
+.about-me-list {
   display: flex;
   flex-direction: column;
-  margin-top: 0;
   align-items: center;
 }
+
+@media only screen and (max-width: 800px) {
+  .about-me-list {
+    align-items: flex-start;
+  }
+ }
+
 .about-me-list li {
-  text-align: left;
+  text-align: start;
   padding-bottom: .5em;
 }
 
