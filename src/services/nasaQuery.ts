@@ -1,20 +1,15 @@
 import { useEffect } from 'react';
-import { 
-  useQuery, 
-  useQueryClient,
-  QueryClient,
-  QueryClientProvider, 
-} from '@tanstack/react-query';
+import { useQuery } from '@tanstack/react-query';
 import { IPictureOfTheDay } from '../models/models';
 
 interface Props{
   nasaUrl: string;
   setPictureOfTheDay: React.Dispatch<React.SetStateAction<IPictureOfTheDay | undefined>>;
 }
-type QueryKey = ['pictureOfTheDay'];
+// type QueryKey = ['pictureOfTheDay'];
 
 const usePictureOfTheDay: React.FC<Props> = ({ nasaUrl, setPictureOfTheDay}) => {
-  const queryClient = useQueryClient();
+  // const queryClient = useQueryClient();
 
   const fetchPictureOfTheDay = async (): Promise<IPictureOfTheDay> => {
     const response = await fetch(`${nasaUrl}`);

@@ -1,11 +1,13 @@
 import './App.css'
-import { useState, useRef } from 'react'
-import { IPictureOfTheDay } from './models/models'
-import DailyPicture from './components/DailyPicture'
-import ContactInfo from './components/ContactInfo'
+import AboutMe from './components/AboutMe'
 import BetterFuture from './components/BetterFuture'
+import ContactInfo from './components/ContactInfo'
+import DailyPicture from './components/DailyPicture'
 import DarkMode from './components/DarkMode'
+import Footer from './components/Footer'
+import { IPictureOfTheDay } from './models/models'
 import usePictureOfTheDay from './services/nasaQuery'
+import { useState, useRef } from 'react'
 import { useIntersectionObserver } from './hooks/hooks'
 
 const baseUrl = import.meta.env.VITE_APP_NASA_BASE_URL
@@ -25,37 +27,23 @@ const App: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null)
   const isVisible = useIntersectionObserver(ref)
 
+  const NAME = "John Nelson"
+  const TAG_LINE = "Software engineer and problem solver"
+  const PROJECT_HEADER = "Projects"
+
   return (
     <>
-    <div className='background'></div>
+      <div className='background'></div>
       <div id="app" className="app">
         <DarkMode theme={theme} setTheme={setTheme} />
-        <h1 className='app-title animate glow'> John Nelson </h1>
-        <p className='tag-line animate glow delay-1'>
-          Software engineer, problem solver
-        </p>
-
-        <h2 className='project-header animate glow delay-2'>Projects</h2>
-        <div className="card animate glow delay-2">
-          <BetterFuture />
-        </div>
+        <h1 className='app-title animate glow'>{NAME}</h1>
+        <p className='tag-line animate glow delay-1'>{TAG_LINE}</p>
+        <h2 className='project-header animate glow delay-2'>{PROJECT_HEADER}</h2>
+        <BetterFuture />
         <DailyPicture pictureOfTheDay={pictureOfTheDay} />
-        <p className="alt-text">
-          In my personal life I spend as much time as I can outside with my dog, Zuko. 
-          <br />
-          You can find us out on the trails around PDX, we're always looking for hiking buddies.
-          <br />
-          Other hobbies include tending my houseplants, building Lego, and I love snow sports, especially skijoring.
-        </p>
-        <p className="alt-text">
-          Want to know more? Let's connect!
-        </p>
-        <ContactInfo theme={theme} isVisible={isVisible} myRef={ref}/>
-        <p className="footer">
-          This <a href="https://github.com/John4850/portfolio-ts-vite" target="_blank">Portfolio</a> is built using TypeScript, React, and assembled with Vite. 
-          Check back as I learn more and do  more.
-          
-        </p>
+        <AboutMe theme={theme} />
+        <ContactInfo theme={theme} isVisible={isVisible} myRef={ref} />
+        <Footer />
       </div>
     </>
   )

@@ -5,7 +5,7 @@ interface Props {
 }
 
 const DailyPicture: React.FC<Props> = ({ pictureOfTheDay }) => {
-  
+
   if (pictureOfTheDay) { //may be undefined if waiting on API
     let videoFrame = (
       <>
@@ -43,27 +43,41 @@ const DailyPicture: React.FC<Props> = ({ pictureOfTheDay }) => {
           <h2>NASA's {media.charAt(0).toUpperCase() + media.slice(1)} of the Day</h2>
           {displayedFrame}
           <div className="picture-text">
-          <h4 className='picture-title'>{pictureOfTheDay?.title}</h4>
-          <h5 className='explanation'>{pictureOfTheDay?.explanation}</h5>
+            <h4 className='picture-title'>{pictureOfTheDay?.title}</h4>
+            <h5 className='explanation'>{pictureOfTheDay?.explanation}</h5>
           </div>
           <p className="alt-text">
-              Example API call made to 
-              <br />
-              <a href="https://api.nasa.gov/index.html" target="_blank">
-                https://api.nasa.gov/index.html 
-              </a>
-              <br />
-              using
-              <br />
-              <a href="https://tanstack.com/query/latest" target="_blank">
-             Tanstack / react-query
-              </a>
-            </p>
+            Example API call made to
+            <br />
+            <a href="https://api.nasa.gov/index.html" target="_blank">
+              https://api.nasa.gov/index.html
+            </a>
+            <br />
+            using
+            <br />
+            <a href="https://tanstack.com/query/latest" target="_blank">
+              Tanstack / react-query
+            </a>
+          </p>
         </div>
       </>
     )
   }
-  else return <div><h2>Loading from NASA's api. . . </h2></div>
+  else return (
+    <div>
+      <h2>Loading from NASA's api. . . </h2>
+      <p>
+        {"🚧 Sorry the API is down 🚧"}
+      </p>
+      <p>
+      {"Check out "} 
+        <a href="https://apod.nasa.gov/apod/astropix.html" target="_blank">
+          Astronomy Picture of the Day
+        </a>
+      {" for more info"}
+      </p>
+    </div>
+  )
 }
 
 
