@@ -6,24 +6,24 @@ const AboutMe: React.FC<Props> = ({ theme }) => {
 
   const DESCRIPTION_TEXT =
     <ul className="about-me-list" >
-      <li>{"🎓 Studied software engineering in 2019 at Alchemy Code Labs"}</li>
-      <li>{"🧑🏼‍💻  Worked as the independent software developer at "}{<a href="https://bffa.org/" target="_blank">BFFA.org</a>}</li>
-      <li>{"⛑ Formerly a FireFighter, Paramedic, and ER Technician"}</li>
-      <li>{"🐕‍🦺 Training a rescued husky malamute mix named Zuko"}</li>
-      <li>{"🥾 Love hiking the trails around Portland with dogs"}</li>
-      <li>{"🧠 Nerd out on sci-fi, fantasy, and comic books"}</li>
-      <li>{"⛷ Love snow sports, especially skijoring"}</li>
-      <li>{"⛵️ Love building Lego's and models"}</li>
+      <li>{"🎓 Completed a professional software development bootcamp at Alchemy Code Labs in 2019"}</li>
+      <li>{"🧑🏼‍💻 Worked as the lead software engineer at"}{<a href="https://bffa.org/" target="_blank">{" BFFA.org"}</a>}{" creating intuitive user interfaces"}</li>
+      <li>{"⛑ Former FireFighter, EMT-Paramedic, and Emergency Room Technician"}</li>
+      <li>{"🐕‍🦺 Training a rescued husky malamute mix named Zuko for therapy"}</li>
+      <li>{"🥾 Can be found hiking the trails around Portland with dogs"}</li>
+      <li>{"⛷ Active with snow sports, especially skijoring"}</li>
+      <li>{"🧠 Nerd for sci-fi, fantasy, and comic books"}</li>
+      <li>{"⛵️ Enjoy building Lego's and models"}</li>
       <li>{"🪴 Caretaker of many houseplants"}</li>
       <li>{"🌱 Currently learning "}{<a href="https://nextjs.org/" target="_blank">NextJS</a>}</li>
     </ul>
 
   return (
     <>
-    <div>
-    <h2 className='about-me animate glow delay-2'>{"About Me"}</h2>
-    {DESCRIPTION_TEXT}
-    </div>
+      <div className='about-me card animate glow delay-2'>
+        <h2 >{"About Me"}</h2>
+        {DESCRIPTION_TEXT}
+      </div>
     </>
   )
 }

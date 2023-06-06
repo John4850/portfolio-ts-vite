@@ -69,7 +69,7 @@ const DailyPicture: React.FC<Props> = ({ pictureOfTheDay }) => {
     )
   }
   else return (
-    <div>
+    <div className='picture-frame'>
       <h2>{"Loading from NASA's api. . . "}</h2>
       <p>
         {"🚧 Sorry the API is down 🚧"}

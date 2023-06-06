@@ -44,9 +44,11 @@
   padding: 2rem;
   color: var(--color-text);
 }
+
 iframe {
   border-radius: 10px;
 }
+
 .alt-text {
   margin-left: auto;
   margin-right: auto;
@@ -54,8 +56,18 @@ iframe {
   color: var(--alt-color-text);
 }
 
-.about-me-list {
-  text-align: justify
+.about-me h2 {
+  margin-bottom: 0;
+}
+.about-me-list{
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  align-items: center;
+}
+.about-me-list li {
+  text-align: left;
+  padding-bottom: .5em;
 }
 
 .button-wrapper {
@@ -203,7 +215,7 @@ iframe {
   border-radius: 5px;
 }
 
-.picture-text{
+.picture-text {
   background-color: rgba(var(--background-gradient), .6);
   border-radius: 10px;
 }
