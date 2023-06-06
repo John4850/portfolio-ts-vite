@@ -44,14 +44,42 @@
   padding: 2rem;
   color: var(--color-text);
 }
+
 iframe {
   border-radius: 10px;
 }
+
 .alt-text {
   margin-left: auto;
   margin-right: auto;
-  max-width: 600px;
+  max-width: 800px;
   color: var(--alt-color-text);
+}
+
+.about-me h2 {
+  margin-bottom: 0;
+}
+
+.about-me {
+  align-items: center;
+  margin-top: 0;
+}
+
+.about-me-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .about-me-list {
+    align-items: flex-start;
+  }
+ }
+
+.about-me-list li {
+  text-align: start;
+  padding-bottom: .5em;
 }
 
 .button-wrapper {
@@ -199,7 +227,7 @@ iframe {
   border-radius: 5px;
 }
 
-.picture-text{
+.picture-text {
   background-color: rgba(var(--background-gradient), .6);
   border-radius: 10px;
 }
@@ -208,6 +236,7 @@ iframe {
   margin-top: .5em;
   padding-top: 1em;
 }
+
 
 .explanation {
   font-family: Tillana;
