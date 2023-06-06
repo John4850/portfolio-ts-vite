@@ -18,7 +18,7 @@ const ContactInfo: React.FC<Props> = ({ theme, isVisible, myRef }) => {
   return (
     <>
       <p className="alt-text">
-        Want to know more? Let's connect!
+        {"Want to know more? Let's connect!"}
       </p>
       <div className='resume animate glow delay-2'>
         <a href="https://drive.google.com/file/d/1erporqoScv8UuoXKucAd5JxeElHaMYNP/view?usp=sharing" target="_blank">
