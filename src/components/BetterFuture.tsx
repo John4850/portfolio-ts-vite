@@ -30,12 +30,18 @@ const BetterFuture: React.FC = () => (
           <a href="https://betterfutureforall.netlify.app/" target="_blank">further</a>
         </iframe>
         <p className="alt-text">
-          {"Built using React, D3, and lots of JavaScript, HTML, and CSS."}
+          {"Built using React, D3, JavaScript, HTML, and CSS. Deployed using GitHub and Netlify"}
         </p>
         <p className="grey-text">
           {"Inspired by"}
           <a href="https://shirleywu.studio/filmflowers/" target="_blank">
             {` Shirley Wu's Film Flowers`}
+          </a>
+        </p>
+        <p className="grey-text">
+          {"GitHub - "}
+          <a href="https://github.com/BetterFutureForAll/bffa-fe" target="_blank">
+            {`https://github.com/BetterFutureForAll/bffa-fe`}
           </a>
         </p>
       </div>
@@ -55,12 +61,18 @@ const BetterFuture: React.FC = () => (
           <a href="https://betterfutureforall.netlify.app/" target="_blank">further</a>
         </iframe>
         <p className="alt-text">
-          {"Built using React.js, JavaScript, HTML, and CSS."}
+          {"Built using React.js, JavaScript, HTML, and CSS. Tested with Jest, Deployed with GitHub and Netlify"}
         </p>
         <p className="grey-text">
           {"🎨 Artwork by"}
           <a href="https://www.gingeryartistry.com/" target="_blank">
             {" Jannah Minnix "}
+          </a>
+        </p>
+        <p className="grey-text">
+          {"GitHub - "}
+          <a href="https://github.com/BetterFutureForAll/definitions-app" target="_blank">
+            {`https://github.com/BetterFutureForAll/definitions-app`}
           </a>
         </p>
       </div>
