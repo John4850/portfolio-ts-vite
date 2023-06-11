@@ -49,6 +49,12 @@ const BetterFuture: React.FC<Props> = ({ theme }) => {
             </a>
           </p>
           <p className="grey-text">
+            {"🎨 Iconography by"}
+            <a href="https://www.chibiyeti.com/" target="_blank">
+              {" Wakey Nelson "}
+            </a>
+          </p>
+          <p className="grey-text">
             <a className="git-link" href="https://github.com/BetterFutureForAll/bffa-fe" target="_blank">
               {getImg}{` GitHub `}
             </a>
