@@ -45,6 +45,10 @@
   color: var(--color-text);
 }
 
+.svg {
+  max-width: 60vw;
+}
+
 iframe {
   border-radius: 10px;
 }
@@ -128,6 +132,10 @@ iframe {
 
 .app a:hover {
   color: hotpink;
+}
+
+.git-link {
+  height: 1rem;
 }
 
 .app-title {
