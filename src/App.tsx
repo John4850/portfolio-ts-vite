@@ -41,6 +41,7 @@ const App: React.FC = () => {
         <p className='tag-line animate glow delay-1'>{TAG_LINE}</p>
         <h2 className='project-header animate glow delay-2'>{PROJECT_HEADER}</h2>
         <BetterFuture />
+        <br />
         <Empathetech theme={theme} />
         <DailyPicture pictureOfTheDay={pictureOfTheDay} />
         <AboutMe theme={theme} />
