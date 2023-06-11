@@ -40,7 +40,7 @@ const App: React.FC = () => {
         <h1 className='app-title animate glow'>{NAME}</h1>
         <p className='tag-line animate glow delay-1'>{TAG_LINE}</p>
         <h2 className='project-header animate glow delay-2'>{PROJECT_HEADER}</h2>
-        <BetterFuture />
+        <BetterFuture theme={theme} />
         <br />
         <Empathetech theme={theme} />
         <DailyPicture pictureOfTheDay={pictureOfTheDay} />
