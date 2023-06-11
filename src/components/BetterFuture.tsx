@@ -1,3 +1,4 @@
+import bffaIcon from '../assets/bffa-icon.png'
 import githubMark from '../assets/github-mark.png'
 import githubMarkWhite from '../assets/github-mark-white.png'
 
@@ -15,9 +16,8 @@ const BetterFuture: React.FC<Props> = ({ theme }) => {
 
         <h3 className='project-header' title="bffa.org">
           <a href="https://bffa.org/" target="_blank">
+            <img src={bffaIcon} alt='better future for all icon' className='bffa-icon'/>
             {" Better Future For All "}
-            <br />
-            {"🔗"}
           </a>
         </h3>
 
