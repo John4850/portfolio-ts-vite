@@ -4,6 +4,7 @@ import BetterFuture from './components/BetterFuture'
 import ContactInfo from './components/ContactInfo'
 import DailyPicture from './components/DailyPicture'
 import DarkMode from './components/DarkMode'
+import Empathetech from './components/Empathetech'
 import Footer from './components/Footer'
 import { IPictureOfTheDay } from './models/models'
 import usePictureOfTheDay from './services/nasaQuery'
@@ -28,7 +29,7 @@ const App: React.FC = () => {
   const isVisible = useIntersectionObserver(ref)
 
   const NAME = "John Nelson"
-  const TAG_LINE = "Software engineer and problem solver"
+  const TAG_LINE = "Software Engineer"
   const PROJECT_HEADER = "Projects"
 
   return (
@@ -40,7 +41,8 @@ const App: React.FC = () => {
         <p className='tag-line animate glow delay-1'>{TAG_LINE}</p>
         <h2 className='project-header animate glow delay-2'>{PROJECT_HEADER}</h2>
         <BetterFuture />
-        <DailyPicture pictureOfTheDay={pictureOfTheDay} />
+        <Empathetech theme={theme} />
+        {/* <DailyPicture pictureOfTheDay={pictureOfTheDay} /> */}
         <AboutMe theme={theme} />
         <ContactInfo theme={theme} isVisible={isVisible} myRef={ref} />
         <Footer />
