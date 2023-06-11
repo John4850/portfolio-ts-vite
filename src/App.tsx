@@ -42,7 +42,7 @@ const App: React.FC = () => {
         <h2 className='project-header animate glow delay-2'>{PROJECT_HEADER}</h2>
         <BetterFuture />
         <Empathetech theme={theme} />
-        {/* <DailyPicture pictureOfTheDay={pictureOfTheDay} /> */}
+        <DailyPicture pictureOfTheDay={pictureOfTheDay} />
         <AboutMe theme={theme} />
         <ContactInfo theme={theme} isVisible={isVisible} myRef={ref} />
         <Footer />
