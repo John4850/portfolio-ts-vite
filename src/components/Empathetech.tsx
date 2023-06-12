@@ -26,33 +26,51 @@ const Empathetech: React.FC<Props> = ({ theme }) => {
             <h4>
               {"An empathy-driven community for software engineers in every stage of their career."}
             </h4>
-            {" We center our community through the lens of non-traditional and diverse people in tech,"} 
-            <br/>
+            {" We center our community through the lens of non-traditional and diverse people in tech,"}
+            <br />
             {"and we welcome all folks who believe that good software engineers are good humans."}
             <h4>{"Why Empathy?"}</h4>
-            {" Empathy is central to our success as software engineers. As a service-based industry, we identify and address client needs—both spoken and unspoken—through our use of technology. As a community, we share our technical knowledge openly and collaborate with peers freely. It is our authentic relationships with people that drive what we develop as software, and how we develop as professionals. Empathy is both our inspiration and our foundation."}
+            <p className="alt-text">
+              <ul>
+                <li>
+                  {"🤗 Empathy is central to our success as software engineers."}
+                </li>
+                <li>
+                  {"👨‍🔧 As a service-based industry, we identify and address client needs—both spoken and unspoken—through our use of technology."}
+                </li>
+                <li>
+                  {"💡 As a community, we share our technical knowledge openly and collaborate with peers freely"}
+                </li>
+                <li>
+                  {"🫱🏼‍🫲🏾 It is our authentic relationships with people that drive what we develop as software, and how we develop as professionals."}
+                </li>
+                <li>
+                  {"🧗‍♂️ Empathy is both our inspiration and our foundation."}
+                </li>
+              </ul>
+            </p>
           </p>
           <a href="https://empathetech-org.vercel.app/" target="_blank">
-            <h3>{"🤗 Empathetech Community Website "}</h3>
+            <h3>{"( )=> { clickMe }"}</h3>
           </a>
           <p className="alt-text">
             {"Built using Next.JS, React, TypeScript, JavaScript, HTML, and CSS."}
           </p>
           <p className="alt-text">
-            {"Collaboratively designed as an Office Hours Workshop."}
+            {"Collaboratively designed in an Office Hours Workshop."}
             <br />
             <h5>
-              {"Personal contributions include:"}
+              {"Personal contributions:"}
             </h5>
             <ul>
               <li>
-                {"Actively participate in biweekly Office Hours, practicing skills and demonstrating technologies like D3.js and TypeScript"}
+                {"👨🏻‍🏫 Biweekly Office Hours, practicing skills and demonstrating technologies like D3.js and TypeScript"}
               </li>
               <li>
-                {"Contractor with Black Business Association of Oregon as a technical subject matter expert, providing assistance and support in tech-driven community projects."}
+                {"🔧 Contract with the Black Business Association of Oregon as a technical subject matter expert, providing assistance and support in tech-driven community projects."}
               </li>
               <li>
-                {"Collaborated on the Empathetech website using Next.js and React, playing a key role in building components like the navigation bar, footer, and code of conduct."}
+                {"🤖 Collaborate on the Empathetech website using Next.js and React. Built the navigation bar, footer, and code of conduct."}
               </li>
             </ul>
           </p>

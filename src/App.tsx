@@ -37,9 +37,9 @@ const App: React.FC = () => {
       <div className='background'></div>
       <div id="app" className="app">
         <DarkMode theme={theme} setTheme={setTheme} />
-        <h1 className='app-title animate glow'>{NAME}</h1>
-        <p className='tag-line animate glow delay-1'>{TAG_LINE}</p>
-        <h2 className='project-header animate glow delay-2'>{PROJECT_HEADER}</h2>
+        <h1 className='app-title animate glow delay-1'>{NAME}</h1>
+        <p className='tag-line animate glow delay-2 alt-text'>{TAG_LINE}</p>
+        <h2 className='project-header animate glow delay-3'>{PROJECT_HEADER}</h2>
         <BetterFuture theme={theme} />
         <br />
         <Empathetech theme={theme} />

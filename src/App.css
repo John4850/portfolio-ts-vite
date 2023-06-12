@@ -17,7 +17,7 @@
 #root.dark {
   --color-background: radial-gradient(circle at bottom center, rgb(100, 0, 100), rgb(50, 0, 75), rgb(0, 0, 100), black);
   --color-text: rgb(255, 225, 250);
-  --alt-color-text: #ff9e9e;
+  --alt-color-text: #fec1c1;
   --button-color: 255, 255, 255;
   --button-text: black;
   --border-color: lightblue;
