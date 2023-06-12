@@ -1,13 +1,17 @@
+import bffaIcon from '../assets/bffa-icon.png'
+import johnAndZuko from '../assets/john-and-zuko.jpg'
+
 interface Props {
   theme: string;
 }
 
 const AboutMe: React.FC<Props> = ({ theme }) => {
+  const bffaImg = <img src={bffaIcon} alt='better future for all icon' className='bffa-icon'/>
 
   const DESCRIPTION_TEXT =
     <ul className="about-me-list" >
-      <li>{"🎓 Completed a professional software development bootcamp at Alchemy Code Lab in 2019"}</li>
-      <li>{"🧑🏼‍💻 Worked as the lead software engineer at"}{<a href="https://bffa.org/" target="_blank">{" BFFA.org"}</a>}{" creating intuitive user interfaces"}</li>
+      <li>{bffaImg}{" Worked as the lead software engineer at"}{<a href="https://bffa.org/" target="_blank">{" BFFA.org"}</a>}{" creating intuitive user interfaces"}</li>
+      <li>{"🎓 Trained professionally in software development Alchemy Code Lab in 2019"}</li>
       <li>{"⛑ Former FireFighter, EMT-Paramedic, and Emergency Room Technician"}</li>
       <li>{"🐕‍🦺 Training a rescued husky malamute mix named Zuko for therapy"}</li>
       <li>{"🥾 Can be found hiking the trails around Portland with dogs"}</li>
@@ -21,7 +25,8 @@ const AboutMe: React.FC<Props> = ({ theme }) => {
   return (
     <>
       <div className='about-me card animate glow delay-2'>
-        <h2>{"About Me"}</h2>
+        <h3 className='alt-text'>{"About Me"}</h3>
+        <img src={johnAndZuko} className="about-image" alt="John sitting on the ground with his dog laying across his lap" />
         {DESCRIPTION_TEXT}
       </div>
     </>

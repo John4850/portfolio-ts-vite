@@ -39,12 +39,13 @@ const App: React.FC = () => {
         <DarkMode theme={theme} setTheme={setTheme} />
         <h1 className='app-title animate glow delay-1'>{NAME}</h1>
         <p className='tag-line animate glow delay-2 alt-text'>{TAG_LINE}</p>
-        <h2 className='project-header animate glow delay-3'>{PROJECT_HEADER}</h2>
-        <BetterFuture theme={theme} />
-        <br />
-        <Empathetech theme={theme} />
-        <DailyPicture pictureOfTheDay={pictureOfTheDay} />
         <AboutMe theme={theme} />
+        <h2 className='project-header animate glow delay-3'>{PROJECT_HEADER}</h2>
+        <Empathetech theme={theme} />
+        <BetterFuture theme={theme} />
+        
+        <DailyPicture pictureOfTheDay={pictureOfTheDay} />
+ 
         <ContactInfo theme={theme} isVisible={isVisible} myRef={ref} />
         <Footer />
       </div>
