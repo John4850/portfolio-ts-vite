@@ -25,10 +25,6 @@ const Empathetech: React.FC<Props> = ({ theme }) => {
         <h4 className='alt-text'>
           {"A hug-o-tron community. Beep beep boop boop."}
         </h4>
-        <h5>
-          {"We are an empathy-driven community for software engineers in every stage of their career."}
-        </h5>
-
         <div className="project">
           <p className="alt-text">
             <h5 className="grey-text">
