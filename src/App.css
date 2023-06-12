@@ -73,6 +73,13 @@ iframe {
   align-items: center;
 }
 
+.about-image {
+  max-width: 70vw;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 1px -1px 3px -1px var(--border-color), -1px 1px 3px -1px var(--alt-color-text);
+}
+
 .about-me h2 {
   margin-bottom: 0;
 }
@@ -210,6 +217,8 @@ iframe {
   border-radius: 10px;
   background: rgba(var(--background-gradient), .3);
   box-shadow: 2px -2px 5px -2px var(--border-color), -2px 2px 5px -2px var(--alt-color-text);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   padding: .5em;
 }
 

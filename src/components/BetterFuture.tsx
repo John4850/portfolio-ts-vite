@@ -8,7 +8,8 @@ interface Props {
 
 const BetterFuture: React.FC<Props> = ({ theme }) => {
 
-  let getImg = <img src={theme == "Dark" ? githubMark : githubMarkWhite} className={`git-link`} alt="GitHub logo" />
+  const getImg = <img src={theme == "Dark" ? githubMark : githubMarkWhite} className={`git-link`} alt="GitHub logo" />
+  const bffaImg = <img src={bffaIcon} alt='better future for all icon' className='bffa-icon'/>
 
   return (
     <>
@@ -16,7 +17,7 @@ const BetterFuture: React.FC<Props> = ({ theme }) => {
 
         <h3 className='project-header' title="bffa.org">
           <a href="https://bffa.org/" target="_blank">
-            <img src={bffaIcon} alt='better future for all icon' className='bffa-icon'/>
+            {bffaImg}
             {" Better Future For All "}
           </a>
         </h3>
@@ -40,7 +41,10 @@ const BetterFuture: React.FC<Props> = ({ theme }) => {
             <a href="https://betterfutureforall.netlify.app/" target="_blank">further</a>
           </iframe>
           <p className="alt-text">
-            {"Built using React, D3, JavaScript, HTML, and CSS. Deployed using GitHub and Netlify"}
+            {"🧰 Tools: React, D3.js, JavaScript, HTML, and CSS"} 
+            <br />
+            {getImg}
+            {" Deployed using GitHub and Netlify"}
           </p>
           <p className="grey-text">
             {"Inspired by"}
@@ -66,17 +70,25 @@ const BetterFuture: React.FC<Props> = ({ theme }) => {
             <h3>{"📖 Definitions Stamp-Book"}</h3>
           </a>
           <p className="grey-text">
-            {"Stamp-Book for exploring the definitions and their sources, physical version available at "}
+            {"Explore the definitions and their sources"}
+            <br />
+            {" artwork available at "}
             <a href="https://bffa.org/" target="_blank">
+            {bffaImg}
               {" BFFA.org"}
-            </a>.
+            </a>
           </p>
           <iframe height="650px" width="100%" src="https://bffa-definitions.netlify.app/">
             Your browser does not support embedded frames (iFrames)
             <a href="https://betterfutureforall.netlify.app/" target="_blank">further</a>
           </iframe>
           <p className="alt-text">
-            {"Built using React.js, JavaScript, HTML, and CSS. Tested with Jest, Deployed with GitHub and Netlify"}
+            {"🧰 Tools: React.js, JavaScript, HTML, and CSS"}
+            <br /> 
+            {"🗜 Testing: Jest"} 
+            <br /> 
+            {getImg}
+            {" Deployment: GitHub and Netlify"}
           </p>
           <p className="grey-text">
             {"🎨 Artwork by"}
