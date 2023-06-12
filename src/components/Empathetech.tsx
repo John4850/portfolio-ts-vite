@@ -28,7 +28,7 @@ const Empathetech: React.FC<Props> = ({ theme }) => {
         <div className="project">
           <p className="alt-text">
             <h5 className="grey-text">
-              {"Personal contributions:"}
+              {"Personal contributions: "}
             </h5>
             <ul>
               <li>
