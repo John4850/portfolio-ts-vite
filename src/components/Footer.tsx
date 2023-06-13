@@ -4,7 +4,7 @@
 
   return (
     <p className="footer">
-      {"This "}
+      {"© 2023 | This "}
       {GITHUB_LINK}
       {" is built using TypeScript, React, and assembled with Vite. Hosted using "}
       {NETLIFY_LINK}
