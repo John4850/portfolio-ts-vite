@@ -45,9 +45,6 @@ const BetterFuture: React.FC<Props> = ({ theme }) => {
           </a>
           <p className="alt-text">
             {"🧰 Tools: React, D3.js, JavaScript, HTML, and CSS"}
-            <br />
-            {getImg}
-            {" Deployed using GitHub and Netlify"}
           </p>
           <p className="grey-text">
             {"Inspired by"}
@@ -88,9 +85,6 @@ const BetterFuture: React.FC<Props> = ({ theme }) => {
             {"🧰 Tools: React.js, JavaScript, HTML, and CSS"}
             <br />
             {"🗜 Testing: Jest"}
-            <br />
-            {getImg}
-            {" Deployment: GitHub and Netlify"}
           </p>
           <p className="grey-text">
             {"🎨 Artwork by"}
