@@ -1,6 +1,8 @@
 import bffaIcon from '../assets/bffa-icon.png'
+import bffaDefinitions from '../assets/bffa-definitions.png'
 import githubMark from '../assets/github-mark.png'
 import githubMarkWhite from '../assets/github-mark-white.png'
+import worldMap from '../assets/world-map.png'
 
 interface Props {
   theme: string;
@@ -9,7 +11,9 @@ interface Props {
 const BetterFuture: React.FC<Props> = ({ theme }) => {
 
   const getImg = <img src={theme == "Dark" ? githubMark : githubMarkWhite} className={`git-link`} alt="GitHub logo" />
-  const bffaImg = <img src={bffaIcon} alt='better future for all icon' className='bffa-icon'/>
+  const bffaImg = <img src={bffaIcon} alt='better future for all icon' className='bffa-icon' />
+  const worldImg = <img src={worldMap} alt='World map and Tooltip' className='image' />
+  const definitionsImg = <img src={bffaDefinitions} alt='Definitions stamp book' className='image' />
 
   return (
     <>
@@ -36,12 +40,11 @@ const BetterFuture: React.FC<Props> = ({ theme }) => {
           <p className="grey-text">
             {"View scores from around the world at a glance"}
           </p>
-          <iframe height="650px" width="100%" src="https://betterfutureforall.netlify.app/">
-            Your browser does not support embedded frames (iFrames)
-            <a href="https://betterfutureforall.netlify.app/" target="_blank">further</a>
-          </iframe>
+          <a href="https://betterfutureforall.netlify.app/" target="_blank" className='project-frame'>
+            {worldImg}
+          </a>
           <p className="alt-text">
-            {"🧰 Tools: React, D3.js, JavaScript, HTML, and CSS"} 
+            {"🧰 Tools: React, D3.js, JavaScript, HTML, and CSS"}
             <br />
             {getImg}
             {" Deployed using GitHub and Netlify"}
@@ -74,19 +77,18 @@ const BetterFuture: React.FC<Props> = ({ theme }) => {
             <br />
             {" artwork available at "}
             <a href="https://bffa.org/" target="_blank">
-            {bffaImg}
+              {bffaImg}
               {" BFFA.org"}
             </a>
           </p>
-          <iframe height="650px" width="100%" src="https://bffa-definitions.netlify.app/">
-            Your browser does not support embedded frames (iFrames)
-            <a href="https://betterfutureforall.netlify.app/" target="_blank">further</a>
-          </iframe>
+          <a href="https://betterfutureforall.netlify.app/" target="_blank" className='project-frame'>
+            {definitionsImg}
+            </a>
           <p className="alt-text">
             {"🧰 Tools: React.js, JavaScript, HTML, and CSS"}
-            <br /> 
-            {"🗜 Testing: Jest"} 
-            <br /> 
+            <br />
+            {"🗜 Testing: Jest"}
+            <br />
             {getImg}
             {" Deployment: GitHub and Netlify"}
           </p>
