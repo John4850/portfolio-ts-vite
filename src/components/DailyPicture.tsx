@@ -34,6 +34,7 @@ const DailyPicture: React.FC<Props> = ({ pictureOfTheDay }) => {
       <>
         <div className='picture-frame'>
           <h2 className="grey-text">
+            {"🔭 "}
             {media.charAt(0).toUpperCase() + media.slice(1)}
             {" of the Day from NASA's API"}
           </h2>
@@ -44,7 +45,7 @@ const DailyPicture: React.FC<Props> = ({ pictureOfTheDay }) => {
           </div>
           <h2>{"NASA's "}
             {media.charAt(0).toUpperCase() + media.slice(1)}
-            {"of the Day"}
+            {" of the Day"}
           </h2>
           {displayedFrame}
           <div className="picture-text">
