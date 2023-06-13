@@ -81,7 +81,7 @@ const BetterFuture: React.FC<Props> = ({ theme }) => {
               {" BFFA.org"}
             </a>
           </p>
-          <a href="https://betterfutureforall.netlify.app/" target="_blank" className='project-frame'>
+          <a href="https://bffa-definitions.netlify.app/" target="_blank" className='project-frame'>
             {definitionsImg}
             </a>
           <p className="alt-text">
