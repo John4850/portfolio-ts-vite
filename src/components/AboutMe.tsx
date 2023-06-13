@@ -26,7 +26,7 @@ const AboutMe: React.FC<Props> = ({ theme }) => {
     <>
       <div className='about-me card animate glow delay-2'>
         <h3 className='alt-text'>{"About Me"}</h3>
-        <img src={johnAndZuko} className="about-image" alt="John sitting on the ground with his dog laying across his lap" />
+        <img src={johnAndZuko} className="image" alt="John sitting on the ground with his dog laying across his lap" />
         {DESCRIPTION_TEXT}
       </div>
     </>
