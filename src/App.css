@@ -46,7 +46,8 @@
 }
 
 .svg {
-  max-width: 60vw;
+  width: 60vw;
+  max-width: 1200px;
 }
 
 iframe {
