@@ -1,7 +1,7 @@
 import bffaIcon from '../assets/bffa-icon.png'
 import bffaDefinitions from '../assets/bffa-definitions.png'
-import githubMark from '../assets/github-mark.png'
-import githubMarkWhite from '../assets/github-mark-white.png'
+import githubMark from '../assets/github-mark.svg'
+import githubMarkWhite from '../assets/github-mark-white.svg'
 import worldMap from '../assets/world-map.png'
 
 interface Props {

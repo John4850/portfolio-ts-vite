@@ -1,5 +1,5 @@
-import githubMark from '../assets/github-mark.png'
-import githubMarkWhite from '../assets/github-mark-white.png'
+import githubMark from '../assets/github-mark.svg'
+import githubMarkWhite from '../assets/github-mark-white.svg'
 import resume from '../assets/resume.png'
 import resumeWhite from '../assets/resume-white.png'
 import emailLogo from '../assets/gmail-logo.png'
@@ -20,23 +20,23 @@ const ContactInfo: React.FC<Props> = ({ theme, isVisible, myRef }) => {
       <p className="alt-text">
         {"Want to know more? Let's connect!"}
       </p>
-      <div className='resume animate glow delay-2'>
+      <div className='resume animate glow delay-1'>
         <a href="https://drive.google.com/file/d/1erporqoScv8UuoXKucAd5JxeElHaMYNP/view?usp=sharing" target="_blank">
-          <img src={theme == "Dark" ? resume : resumeWhite} className={`resume-logo ${isVisible ? 'animate glow delay-1' : ''}`} alt="Resume link" />
+          <img src={theme == "Dark" ? resume : resumeWhite} className={`resume-logo ${isVisible ? 'animate glow delay-1' : ''}`} alt="Resume link" title="Resume" />
         </a>
       </div>
       <div id="" className="contact-info" ref={myRef} >
         <a href="https://github.com/John4850" target="_blank" className="contact-link">
-          <img src={theme == "Dark" ? githubMark : githubMarkWhite} className={`contact-logo ${isVisible ? 'animate glow delay-2' : ''}`} alt="GitHub logo" />
+          <img src={theme == "Dark" ? githubMark : githubMarkWhite} className={`contact-logo ${isVisible ? 'animate glow delay-2' : ''}`} alt="GitHub logo" title='GitHub' />
         </a>
         <a href={`mailto:${email}`} target="_blank" className="contact-link">
-          <img src={emailLogo} className={`contact-logo ${isVisible ? 'animate glow delay-3' : ''}`} alt="GitHub link" />
+          <img src={emailLogo} className={`contact-logo ${isVisible ? 'animate glow delay-3' : ''}`} alt="Email" title="Email" />
         </a>
         <a href="https://www.linkedin.com/in/johnnelson4850/" target="_blank" className="contact-link">
-          <img src={linkedInLogo} className={`contact-logo ${isVisible ? 'animate glow delay-4' : ''}`} alt="LinkedIn link" />
+          <img src={linkedInLogo} className={`contact-logo ${isVisible ? 'animate glow delay-4' : ''}`} alt="LinkedIn link" title='LinkedIn'/>
         </a>
       </div>
-      <a href="https://www.instagram.com/johnnelson4850/" target="_blank">
+      <a href="https://www.instagram.com/johnnelson4850/" target="_blank" className="contact-link" title="Instagram">
         <img src={instagramLogo} className={`logo ${isVisible ? 'animate glow delay-5' : ''}`} alt="Instagram logo" />
       </a>
     </>

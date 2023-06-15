@@ -9,7 +9,7 @@ const AboutMe: React.FC<Props> = ({ theme }) => {
   const bffaImg = <img src={bffaIcon} alt='better future for all icon' className='bffa-icon'/>
 
   const DESCRIPTION_TEXT =
-    <ul className="about-me-list" >
+    <ul className="about-me-list  animate glow delay-5" >
       <li>{bffaImg}{" Worked as the lead software engineer at"}{<a href="https://bffa.org/" target="_blank">{" BFFA.org"}</a>}{" creating intuitive user interfaces"}</li>
       <li>{"🎓 Trained professionally in software development Alchemy Code Lab in 2019"}</li>
       <li>{"⛑ Former FireFighter, EMT-Paramedic, and Emergency Room Technician"}</li>
@@ -25,8 +25,8 @@ const AboutMe: React.FC<Props> = ({ theme }) => {
   return (
     <>
       <div className='about-me card animate glow delay-2'>
-        <h3 className='alt-text'>{"About Me"}</h3>
-        <img src={johnAndZuko} className="image" alt="John sitting on the ground with his dog laying across his lap" />
+        <h3 className='alt-text animate glow delay-3'>{"About Me"}</h3>
+        <img src={johnAndZuko} className="image animate glow delay-4" alt="John sitting on the ground with his dog laying across his lap" />
         {DESCRIPTION_TEXT}
       </div>
     </>
