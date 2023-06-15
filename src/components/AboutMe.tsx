@@ -1,4 +1,4 @@
-import bffaIcon from '../assets/bffa-icon.png'
+import bffaIcon from '../assets/bffa-icon.svg'
 import johnAndZuko from '../assets/john-and-zuko.jpg'
 import johnAndZukoSmall from '../assets/john-and-zuko-small.jpg'
 import johnAndZukoWebP from '../assets/john-and-zuko.webp'

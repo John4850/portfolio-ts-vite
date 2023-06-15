@@ -4,7 +4,7 @@ import resume from '../assets/resume.png'
 import resumeWhite from '../assets/resume-white.png'
 import emailLogo from '../assets/gmail-logo.png'
 import linkedInLogo from '../assets/LI-In-Bug.png'
-import instagramLogo from '../assets/Instagram_Glyph_Gradient.png'
+import instagramLogo from '../assets/Instagram_Glyph_Gradient_RGB.svg'
 
 interface Props {
   theme: string;

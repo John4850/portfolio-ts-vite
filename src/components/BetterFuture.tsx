@@ -1,4 +1,4 @@
-import bffaIcon from '../assets/bffa-icon.png'
+import bffaIcon from '../assets/bffa-icon.svg'
 import bffaDefinitions from '../assets/bffa-definitions.png'
 import bffaDefinitionsWebP from '../assets/bffa-definitions.webp'
 import githubMark from '../assets/github-mark.svg'
