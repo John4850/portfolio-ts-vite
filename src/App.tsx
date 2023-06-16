@@ -29,7 +29,7 @@ const App: React.FC = () => {
   const isVisible = useIntersectionObserver(ref)
 
   const NAME = "John Nelson"
-  const TAG_LINE = "Software Engineer"
+  const TAG_LINE = "Human Centered Tech Solutions"
   const PROJECT_HEADER = "Projects"
 
   return (
