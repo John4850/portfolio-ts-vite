@@ -1,8 +1,12 @@
-import bffaIcon from '../assets/bffa-icon.png'
+import bffaIcon from '../assets/bffa-icon.svg'
 import bffaDefinitions from '../assets/bffa-definitions.png'
-import githubMark from '../assets/github-mark.png'
-import githubMarkWhite from '../assets/github-mark-white.png'
+import bffaDefinitionsSmall from '../assets/bffa-definitions-small.png'
+import bffaDefinitionsWebP from '../assets/bffa-definitions.webp'
+import githubMark from '../assets/github-mark.svg'
+import githubMarkWhite from '../assets/github-mark-white.svg'
 import worldMap from '../assets/world-map.png'
+import worldMapSmall from '../assets/world-map-small.png'
+import worldMapWebP from '../assets/world-map.webp'
 
 interface Props {
   theme: string;
@@ -11,9 +15,24 @@ interface Props {
 const BetterFuture: React.FC<Props> = ({ theme }) => {
 
   const getImg = <img src={theme == "Dark" ? githubMark : githubMarkWhite} className={`git-link`} alt="GitHub logo" />
+
   const bffaImg = <img src={bffaIcon} alt='better future for all icon' className='bffa-icon' />
-  const worldImg = <img src={worldMap} alt='World map and Tooltip' className='image' />
-  const definitionsImg = <img src={bffaDefinitions} alt='Definitions stamp book' className='image' />
+  
+  const worldImg = (
+    <picture>
+      <source srcSet={worldMapWebP} type="image/webp" />
+      <source srcSet={worldMap} type="image/png" media="(min-width: 601px)" />
+      <img src={worldMapSmall} alt='World map and Tooltip' className='image' />
+    </picture>
+  )
+
+  const definitionsImg = (
+    <picture>
+      <source srcSet={bffaDefinitionsWebP} type="image/webp" />
+      <source srcSet={bffaDefinitions} type="image/png" media="(min-width: 601px)" />
+      <img src={bffaDefinitionsSmall} alt='Definitions stamp book' className='image' />
+    </picture>
+  )
 
   return (
     <>
@@ -80,7 +99,7 @@ const BetterFuture: React.FC<Props> = ({ theme }) => {
           </p>
           <a href="https://bffa-definitions.netlify.app/" target="_blank" className='project-frame'>
             {definitionsImg}
-            </a>
+          </a>
           <p className="alt-text">
             {"🧰 Tools: React.js, JavaScript, HTML, and CSS"}
             <br />

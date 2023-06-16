@@ -43,14 +43,12 @@
   font-family: IBM Plex Sans;
   padding: 2rem;
   color: var(--color-text);
+  box-sizing: border-box;
 }
 
 .svg {
-  max-width: 60vw;
-}
-
-iframe {
-  border-radius: 10px;
+  width: 60vw;
+  max-width: 1200px;
 }
 
 .alt-text {
@@ -136,9 +134,12 @@ iframe {
 
 .git-link {
   height: 1rem;
+  max-height: 24px;
+  width: 1rem;
 }
 .bffa-icon {
   height: 1rem;
+  width: 1rem;
 }
 
 .app-title {
@@ -184,7 +185,8 @@ iframe {
   height: 100%;
   width: 100%;
   min-width: 60px;
-  max-height: 124px;
+  max-width: 100px;
+  max-height: 100px;
 }
 
 .contact-logo:hover {
@@ -210,20 +212,21 @@ iframe {
 }
 
 .image {
+  width: 1200px;
   max-width: 70vw;
-  margin: 1rem;
+  height: auto;
   border-radius: 10px;
   box-shadow: 1px -1px 3px -1px var(--border-color), -1px 1px 3px -1px var(--alt-color-text);
 }
 
 .logo {
   height: 5em;
+  max-height: 100px;
   padding: 1.5em;
 }
 
 .logo:hover {
   filter: drop-shadow(0 0 2em var(--border-color));
-
 }
 
 .project-header {
@@ -261,6 +264,7 @@ iframe {
 
 .picture {
   width: 100%;
+  max-width: 1200px;
   border-radius: 5px;
 }
 
@@ -280,6 +284,7 @@ iframe {
 }
 
 .resume {
+  height: 100px;
   max-width: 75px;
 }
 
@@ -299,7 +304,7 @@ iframe {
 @media (prefers-reduced-motion: no-preference) {
   .animate {
     animation-duration: 0.75s;
-    animation-delay: 0.5s;
+    animation-delay: 0.2s;
     animation-name: animate-fade;
     animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
     animation-fill-mode: backwards;
@@ -343,5 +348,20 @@ iframe {
 
   .delay-5 {
     animation-delay: 0.5s;
+  }
+  .delay-6 {
+    animation-delay: 0.6s;
+  }
+  .delay-7 {
+    animation-delay: 0.7s;
+  }
+  .delay-8 {
+    animation-delay: 0.8s;
+  }
+  .delay-9 {
+    animation-delay: 0.9s;
+  }
+  .delay-10 {
+    animation-delay: 1.0s;
   }
 }

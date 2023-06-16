@@ -14,14 +14,26 @@ const DailyPicture: React.FC<Props> = ({ pictureOfTheDay }) => {
       </>
     )
 
+    //   <picture>
+    //   <source srcSet={johnAndZukoWebP} type="image/webp" />
+    //   <source srcSet={johnAndZuko} type="image/png" media="(min-width: 601px)" />
+    //   <img src={johnAndZukoSmall} className="image" alt="John sitting on the ground with his dog laying across his lap" />
+    // </picture>
+
     let pictureFrame = (
       <div className="picture-of-the-day" >
         <a href={pictureOfTheDay.hdurl ? pictureOfTheDay.hdurl : pictureOfTheDay.url} target="_blank">
-          <img
-            src={pictureOfTheDay.hdurl ? pictureOfTheDay.hdurl : pictureOfTheDay.url}
-            alt={pictureOfTheDay?.explanation}
-            className="picture"
-          />
+          <picture>
+            <source
+              srcSet={pictureOfTheDay.hdurl ? pictureOfTheDay.hdurl : pictureOfTheDay.url}
+              media="(min-width: 1000px)"
+            />
+            <img
+              src={pictureOfTheDay.url}
+              alt={pictureOfTheDay?.explanation}
+              className="picture"
+            />
+          </picture>
           <h6 className='copyright'>© {pictureOfTheDay.date.slice(0, 4)} {pictureOfTheDay?.copyright}</h6>
         </a>
       </div>

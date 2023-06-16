@@ -1,7 +1,7 @@
 import empathetechLogo from '../assets/empathetech.svg'
 import empathetechLogoWhite from '../assets/empathetech-white.svg'
-import githubMark from '../assets/github-mark.png'
-import githubMarkWhite from '../assets/github-mark-white.png'
+import githubMark from '../assets/github-mark.svg'
+import githubMarkWhite from '../assets/github-mark-white.svg'
 
 interface Props {
   theme: string;
@@ -32,7 +32,8 @@ const Empathetech: React.FC<Props> = ({ theme }) => {
             </h5>
             <ul>
               <li>
-                {"🤖 Created navigation bar, footer, and code of conduct components for the website."}
+                {"🤖 Created navigation bar, footer, and code of conduct components for the "}
+                <a href="https://empathetech.org" target="_blank" >{"website"}</a>
               </li>
               <li>
                 {"👨🏻‍🏫 Biweekly Office Hours: Demonstrating lessons learned with D3.js and React"}
@@ -47,13 +48,13 @@ const Empathetech: React.FC<Props> = ({ theme }) => {
               </li>
             </ul>
           </p>
+          <p className="alt-text">
+            {"🧰 Next.JS, React, TypeScript, JavaScript, HTML, and CSS."}
+          </p>
           <p className="grey-text">
             <a className="git-link" href="https://github.com/empathetech/" target="_blank">
               {getImg}{` GitHub `}
             </a>
-          </p>
-          <p className="alt-text">
-            {"🧰 Next.JS, React, TypeScript, JavaScript, HTML, and CSS."}
           </p>
         </div>
       </div>
