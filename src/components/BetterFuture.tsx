@@ -1,9 +1,11 @@
 import bffaIcon from '../assets/bffa-icon.svg'
 import bffaDefinitions from '../assets/bffa-definitions.png'
+import bffaDefinitionsSmall from '../assets/bffa-definitions-small.png'
 import bffaDefinitionsWebP from '../assets/bffa-definitions.webp'
 import githubMark from '../assets/github-mark.svg'
 import githubMarkWhite from '../assets/github-mark-white.svg'
 import worldMap from '../assets/world-map.png'
+import worldMapSmall from '../assets/world-map-small.png'
 import worldMapWebP from '../assets/world-map.webp'
 
 interface Props {
@@ -19,16 +21,16 @@ const BetterFuture: React.FC<Props> = ({ theme }) => {
   const worldImg = (
     <picture>
       <source srcSet={worldMapWebP} type="image/webp" />
-      <source srcSet={worldMap} type="image/png" />
-      <img src={worldMap} alt='World map and Tooltip' className='image' />
+      <source srcSet={worldMap} type="image/png" media="(min-width: 601px)" />
+      <img src={worldMapSmall} alt='World map and Tooltip' className='image' />
     </picture>
   )
 
   const definitionsImg = (
     <picture>
       <source srcSet={bffaDefinitionsWebP} type="image/webp" />
-      <source srcSet={bffaDefinitions} type="image/png" />
-      <img src={bffaDefinitions} alt='Definitions stamp book' className='image' />
+      <source srcSet={bffaDefinitions} type="image/png" media="(min-width: 601px)" />
+      <img src={bffaDefinitionsSmall} alt='Definitions stamp book' className='image' />
     </picture>
   )
 
