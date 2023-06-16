@@ -37,7 +37,7 @@ const ContactInfo: React.FC<Props> = ({ theme, isVisible, myRef }) => {
         </a>
       </div>
       <a href="https://www.instagram.com/johnnelson4850/" target="_blank" className="contact-link" title="Instagram">
-        <img src={instagramLogo} className={`logo ${isVisible ? 'animate glow delay-5' : ''}`} alt="Instagram logo" />
+        <img src={instagramLogo} className={`contact-logo ${isVisible ? 'animate glow delay-5' : ''}`} alt="Instagram logo" />
       </a>
     </>
   )

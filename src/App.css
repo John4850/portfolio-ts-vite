@@ -43,15 +43,12 @@
   font-family: IBM Plex Sans;
   padding: 2rem;
   color: var(--color-text);
+  box-sizing: border-box;
 }
 
 .svg {
   width: 60vw;
   max-width: 1200px;
-}
-
-iframe {
-  border-radius: 10px;
 }
 
 .alt-text {
@@ -188,8 +185,8 @@ iframe {
   height: 100%;
   width: 100%;
   min-width: 60px;
-  max-width: 124px;
-  max-height: 124px;
+  max-width: 100px;
+  max-height: 100px;
 }
 
 .contact-logo:hover {
@@ -215,21 +212,21 @@ iframe {
 }
 
 .image {
-  width: 70vw;
-  max-width: 1200px;
-  margin: 1rem;
+  width: 1200px;
+  max-width: 70vw;
+  height: auto;
   border-radius: 10px;
   box-shadow: 1px -1px 3px -1px var(--border-color), -1px 1px 3px -1px var(--alt-color-text);
 }
 
 .logo {
   height: 5em;
+  max-height: 100px;
   padding: 1.5em;
 }
 
 .logo:hover {
   filter: drop-shadow(0 0 2em var(--border-color));
-
 }
 
 .project-header {
@@ -287,6 +284,7 @@ iframe {
 }
 
 .resume {
+  height: 100px;
   max-width: 75px;
 }
 
