@@ -27,7 +27,7 @@ const AboutMe: React.FC<Props> = ({ theme }) => {
   return (
     <>
       <div className='about-me card'>
-        <h3 className='alt-text animate glow delay-2'>{"About Me"}</h3>
+        <h2 className='alt-text animate glow delay-2'>{"About Me"}</h2>
         <picture>
           <source srcSet={johnAndZukoWebP} type="image/webp" />
           <source srcSet={johnAndZuko} type="image/png" media="(min-width: 601px)" />

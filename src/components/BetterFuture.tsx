@@ -39,13 +39,13 @@ const BetterFuture: React.FC<Props> = ({ theme }) => {
       <div className="card animate glow delay-2">
 
         <a href="https://bffa.org/" target="_blank">
-          <h3 className="project-title" title="bffa.org">
+          <h2 className="project-title" title="bffa.org">
             {bffaImg}
             {" Better Future For All "}
-          </h3>
-          <h5 >
+          </h2>
+          <span >
             {"(BFFA.org)"}
-          </h5>
+          </span>
         </a>
 
         <span className="explanation">

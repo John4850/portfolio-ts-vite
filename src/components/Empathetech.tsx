@@ -26,9 +26,9 @@ const Empathetech: React.FC<Props> = ({ theme }) => {
               loading='lazy'
             />
           </h3>
-          <h5 >
+          <span >
             {"(pronounced “empathetic”)"}
-          </h5>
+          </span>
           <h4 className='empathetech-tag-line'>
             {"A hug-o-tron community. Beep beep boop boop."}
           </h4>
