@@ -62,7 +62,7 @@ const DailyPicture: React.FC<Props> = ({ pictureOfTheDay }) => {
             {"What's not to love about staring at the stars and ultra hd images of them?"}
           </p>
           <p className="alt-text">
-            {"Here I am making an API call to NASA, and they love large image sizes."}
+            {"Here I am making an API call to NASA, lazily because they love large image sizes."}
           </p>
           {displayedFrame}
           <div className="picture-text">
