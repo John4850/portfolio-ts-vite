@@ -45,7 +45,7 @@ const DailyPicture: React.FC<Props> = ({ pictureOfTheDay }) => {
     return (
       <>
         <div className='picture-frame'>
-          <h2 className="grey-text">
+          <h2 className="project-title">
             {"🔭 "}
             {media.charAt(0).toUpperCase() + media.slice(1)}
             {" of the Day from NASA's API"}
@@ -55,17 +55,13 @@ const DailyPicture: React.FC<Props> = ({ pictureOfTheDay }) => {
               {"What's not to love about staring at the stars and ultra hd images of them?"}
             </p>
           </div>
-          <h2>{"NASA's "}
-            {media.charAt(0).toUpperCase() + media.slice(1)}
-            {" of the Day"}
-          </h2>
           {displayedFrame}
           <div className="picture-text">
             <h4 className='picture-title'>{pictureOfTheDay?.title}</h4>
             <h5 className='explanation'>{pictureOfTheDay?.explanation}</h5>
           </div>
           <p className="alt-text">
-            {"API call made to"}
+            {"🔩 API call made to"}
             <br />
             <a href="https://api.nasa.gov/index.html" target="_blank">
               {"https://api.nasa.gov/index.html"}
