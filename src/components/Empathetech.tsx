@@ -22,15 +22,15 @@ const Empathetech: React.FC<Props> = ({ theme }) => {
         <h5 >
           {"(pronounced “empathetic”)"}
         </h5>
-        <h4 className='alt-text'>
+        <h4 className='empathetech-tag-line'>
           {"A hug-o-tron community. Beep beep boop boop."}
         </h4>
         <div className="project">
-          <p className="alt-text">
-            <h5 className="grey-text">
+          <div className="alt-text">
+            <span className="grey-text">
               {"Personal contributions: "}
-            </h5>
-            <ul>
+            </span>
+            <ul className="project-list">
               <li>
                 {"🤖 Created navigation bar, footer, and code of conduct components for the "}
                 <a href="https://empathetech.org" target="_blank" >{"website"}</a>
@@ -47,7 +47,7 @@ const Empathetech: React.FC<Props> = ({ theme }) => {
                 <a href="https://bbaoregon.org/" target="_blank">{"Black Business Association of Oregon"}</a>
               </li>
             </ul>
-          </p>
+          </div>
           <p className="alt-text">
             {"🧰 Next.JS, React, TypeScript, JavaScript, HTML, and CSS."}
           </p>

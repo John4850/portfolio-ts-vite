@@ -1,14 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tillana:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
-@font-face {
-  font-family: 'opendyslexic';
-	src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
-	font-style: normal;
-	font-weight: normal;
-} 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.cdnfonts.com/css/open-dyslexic');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tillana:wght@400;500&display=swap');
+
 
 #root {
   --color-text: black;
@@ -49,7 +46,7 @@
   align-items: center;
   text-align: center;
   justify-content: center;
-  font-family: opendyslexic;
+  font-family: open-dyslexic;
   padding: 2rem;
   color: var(--color-text);
   box-sizing: border-box;
@@ -103,12 +100,12 @@
 }
 
 .about-me-list {
-  font-family: Amatic SC;
-  font-size: 1.5em;
+  font-family: open-dyslexic;
   display: flex;
   flex-direction: column;
   align-items: center;
   list-style-position: outside;
+  list-style: none;
 }
 
 .about-me-list a {
@@ -117,7 +114,6 @@
 
 @media only screen and (max-width: 800px) {
   .about-me-list {
-    font-size: 1em;
     align-items: flex-start;
   }
 }
@@ -168,8 +164,15 @@
 .tag-line {
   margin: 0;
   font-size: 3vmax;
+  font-family: Lexend;
+  font-weight: 400;
+}
+
+.empathetech-tag-line {
+  margin: 0;
+  font-size: 3vmax;
   font-family: Amatic SC;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .contact-info {
@@ -223,7 +226,7 @@
 }
 
 .explanation {
-  font-family: Tillana;
+  font-family: Lexend;
   margin-top: 0;
   padding: 1em;
 }
@@ -266,14 +269,20 @@
   background-color: rgba(var(--background-gradient), .3);
 }
 
+.project-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .project p {
   margin-top: .5em;
   margin-bottom: .5em;
 }
 
 .project-title {
-  font-family: Amatic SC;
-  font-size: 2em;
+  font-family: open-dyslexic;
+  font-size: 1.5em;
 }
 
 .picture-frame {
