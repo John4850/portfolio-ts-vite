@@ -140,7 +140,7 @@
   background-color: rgba(var(--button-color), 0.6);
   font-size: 8pt;
   font-weight: 600;
-  font-family: Poppins;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   color: var(--button-text);
   border: none;
   border-radius: 2px;
@@ -163,7 +163,7 @@
 }
 
 .app-title {
-  font-family: IBM Plex sans;
+  font-family: IBM Plex sans, 'Times New Roman', Times, serif;
   font-size: 10vmin;
   margin: 0.25em;
 }
@@ -171,7 +171,7 @@
 .tag-line {
   margin: 0;
   font-size: 3vmax;
-  font-family: Lexend;
+  font-family: Lexend, Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
 
