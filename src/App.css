@@ -5,12 +5,14 @@
 @import url('https://fonts.cdnfonts.com/css/open-dyslexic');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tillana:wght@400;500&display=swap');
+
 @font-face {
-  font-family:open-dyslexic;
-  font-style:normal;
-  font-weight:400;
-  font-display:swap;
-  src:local('Open-Dyslexic'),url(https://fonts.cdnfonts.com/s/29616/open-dyslexic.woff) format('woff');
+  font-family: open-dyslexic;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open-Dyslexic'),
+    url(https://fonts.cdnfonts.com/s/29616/open-dyslexic.woff) format('woff');
+  font-display: swap;
 }
 
 
@@ -157,6 +159,7 @@
   max-height: 24px;
   width: 1rem;
 }
+
 .bffa-icon {
   height: 1rem;
   width: 1rem;
@@ -308,6 +311,7 @@
   background: rgba(var(--background-gradient), .3);
   box-shadow: 2px -2px 5px -2px var(--border-color), -2px 2px 5px -2px var(--alt-color-text);
 }
+
 .picture-of-the-day {
   width: 100%;
   max-width: 1200px;
@@ -401,11 +405,25 @@
   }
 
   @keyframes wiggle {
-    0% {transform: rotate(10deg);}
-    25% {transform: rotate(-10deg);}
-    50% {transform: rotate(20deg);}
-    75% {transform: rotate(-5deg);}
-    100% {transform: rotate(0deg);}
+    0% {
+      transform: rotate(10deg);
+    }
+
+    25% {
+      transform: rotate(-10deg);
+    }
+
+    50% {
+      transform: rotate(20deg);
+    }
+
+    75% {
+      transform: rotate(-5deg);
+    }
+
+    100% {
+      transform: rotate(0deg);
+    }
   }
 
   @keyframes cd-bounce-right {
@@ -413,25 +431,29 @@
       opacity: .2;
       transform: translateX(-200px);
     }
+
     60% {
       opacity: .7;
       transform: translateX(15px);
     }
+
     100% {
       opacity: 1;
       transform: translateX(0);
     }
   }
-  
+
   @keyframes cd-bounce-left {
     0% {
       opacity: .2;
       transform: translateX(200px);
     }
+
     60% {
       opacity: .7;
       transform: translateX(-15px);
     }
+
     100% {
       opacity: 1;
       transform: translateX(0);
@@ -457,18 +479,23 @@
   .delay-5 {
     animation-delay: 0.5s;
   }
+
   .delay-6 {
     animation-delay: 0.6s;
   }
+
   .delay-7 {
     animation-delay: 0.7s;
   }
+
   .delay-8 {
     animation-delay: 0.8s;
   }
+
   .delay-9 {
     animation-delay: 0.9s;
   }
+
   .delay-10 {
     animation-delay: 1.0s;
   }
