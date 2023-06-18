@@ -16,11 +16,11 @@ const DailyPicture: React.FC<Props> = ({ pictureOfTheDay }) => {
           width="100%"
           src={pictureOfTheDay.url}>
         </iframe>
-        <h6
+        <span
           className='copyright'>
           ©{pictureOfTheDay.date.slice(0, 4)}
           {pictureOfTheDay?.copyright}
-        </h6>
+        </span>
       </>
     )
 
@@ -66,8 +66,8 @@ const DailyPicture: React.FC<Props> = ({ pictureOfTheDay }) => {
           </p>
           {displayedFrame}
           <div className="picture-text">
-            <h4 className='picture-title'>{pictureOfTheDay?.title}</h4>
-            <h5 className='explanation'>{pictureOfTheDay?.explanation}</h5>
+            <p className='picture-title'>{pictureOfTheDay?.title}</p>
+            <p className='explanation'>{pictureOfTheDay?.explanation}</p>
           </div>
           <p className="alt-text">
             {"🔩 API call made to"}
