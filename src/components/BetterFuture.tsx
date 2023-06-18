@@ -22,7 +22,7 @@ const BetterFuture: React.FC<Props> = ({ theme }) => {
     <picture>
       <source srcSet={worldMapWebP} type="image/webp" />
       <source srcSet={worldMap} type="image/png" media="(min-width: 601px)" />
-      <img src={worldMapSmall} alt='World map and Tooltip' className='image' />
+      <img src={worldMapSmall} alt='World map and Tooltip' className='image' loading='lazy' />
     </picture>
   )
 
@@ -30,7 +30,7 @@ const BetterFuture: React.FC<Props> = ({ theme }) => {
     <picture>
       <source srcSet={bffaDefinitionsWebP} type="image/webp" />
       <source srcSet={bffaDefinitions} type="image/png" media="(min-width: 601px)" />
-      <img src={bffaDefinitionsSmall} alt='Definitions stamp book' className='image' />
+      <img src={bffaDefinitionsSmall} alt='Definitions stamp book' className='image' loading='lazy' />
     </picture>
   )
 
@@ -56,7 +56,7 @@ const BetterFuture: React.FC<Props> = ({ theme }) => {
           <a href="http://www.socialprogress.org/framework" target="_blank">{" SPI framework "}</a>
           {"from the"}
           <a href="http://socialprogress.org/" target="_blank">{" Social Progress Imperative "}</a>
-          </p>
+        </p>
 
         <div className="project">
           <a href="https://betterfutureforall.netlify.app/" title="open in new window" target="_blank">

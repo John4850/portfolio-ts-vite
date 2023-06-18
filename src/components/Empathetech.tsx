@@ -19,7 +19,12 @@ const Empathetech: React.FC<Props> = ({ theme }) => {
         </h2>
         <a href="https://empathetech.org" target="_blank">
           <h3 className='project-header' title="Empathetech">
-            <img src={theme == "Dark" ? empathetechLogo : empathetechLogoWhite} className={'logo animate svg glow delay-5'} alt="Empathetech logo" />
+            <img
+              src={theme == "Dark" ? empathetechLogo : empathetechLogoWhite}
+              className={'logo animate svg glow delay-5'}
+              alt="Empathetech logo"
+              loading='lazy'
+            />
           </h3>
           <h5 >
             {"(pronounced “empathetic”)"}
