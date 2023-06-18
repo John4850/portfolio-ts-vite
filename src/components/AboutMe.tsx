@@ -12,9 +12,9 @@ const AboutMe: React.FC<Props> = ({ theme }) => {
 
   const DESCRIPTION_TEXT =
     <ul className="about-me-list animate glow delay-1" >
-      <li className="animate glow delay-1">{bffaImg}{" Worked as the lead software engineer at"}{<a href="https://bffa.org/" target="_blank">{" BFFA.org"}</a>}{" creating intuitive user interfaces"}</li>
+      <li className="animate glow delay-1">{bffaImg}{" Worked as the lead software engineer at "}{<a href="https://bffa.org/" target="_blank">{"BFFA.org"}</a>}{" creating intuitive user interfaces"}</li>
       <li className="animate glow delay-2">{"🎓 Trained professionally in software development Alchemy Code Lab in 2019"}</li>
-      <li className="animate glow delay-3">{"⛑ Former FireFighter, EMT-Paramedic, and Emergency Room Technician"}</li>
+      <li className="animate glow delay-3">{"⛑ Former Firefighter, EMT-Paramedic, and Emergency Room Technician"}</li>
       <li className="animate glow delay-4">{"🐕‍🦺 Training a rescued husky malamute mix named Zuko for therapy"}</li>
       <li className="animate glow delay-5">{"🥾 Can be found hiking the trails around Portland with dogs"}</li>
       <li className="animate glow delay-6">{"⛷ Active with snow sports, especially skijoring"}</li>

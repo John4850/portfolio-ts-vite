@@ -36,11 +36,11 @@ const Empathetech: React.FC<Props> = ({ theme }) => {
                 <a href="https://empathetech.org" target="_blank" >{"website"}</a>
               </li>
               <li>
-                {"👨🏻‍🏫 Biweekly Office Hours: Demonstrating lessons learned with D3.js and React"}
+                {"👨🏻‍🏫 Biweekly Office Hours: Led demonstrations on using D3.js with React"}
               </li>
               <li>
                 {getImg}
-                {" Collaborated on issues/code reviews/pull requests using GitHub"}
+                {" Collaborated using GitHub for issues, code reviews, and pull requests"}
               </li>
               <li>
                 {"🔧 Technical expert with "}

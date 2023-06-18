@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tillana:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@font-face {
+  font-family: 'opendyslexic';
+	src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
+	font-style: normal;
+	font-weight: normal;
+} 
 
 #root {
   --color-text: black;
   --color-background: radial-gradient(circle at bottom center, rgb(143, 246, 222), lightblue, rgb(255, 255, 255), rgb(95, 100, 255));
-  --alt-color-text: rgb(59, 0, 33);
+  --alt-color-text: rgb(55, 0, 33);
   --button-color: 0, 0, 0;
   --button-text: lightblue;
   --border-color: rgb(0, 38, 255);
@@ -17,7 +26,7 @@
 #root.dark {
   --color-background: radial-gradient(circle at bottom center, rgb(100, 0, 100), rgb(50, 0, 75), rgb(0, 0, 100), black);
   --color-text: rgb(255, 225, 250);
-  --alt-color-text: #fec1c1;
+  --alt-color-text: rgb(255, 226, 200);
   --button-color: 255, 255, 255;
   --button-text: black;
   --border-color: lightblue;
@@ -40,10 +49,23 @@
   align-items: center;
   text-align: center;
   justify-content: center;
-  font-family: IBM Plex Sans;
+  font-family: opendyslexic;
   padding: 2rem;
   color: var(--color-text);
   box-sizing: border-box;
+}
+
+.app a {
+  font-weight: 600;
+  color: var(--alt-color-text);
+}
+
+.app a:visited {
+  color: var(--color-text);
+}
+
+.app a:hover {
+  color: hotpink;
 }
 
 .svg {
@@ -81,13 +103,21 @@
 }
 
 .about-me-list {
+  font-family: Amatic SC;
+  font-size: 1.5em;
   display: flex;
   flex-direction: column;
   align-items: center;
+  list-style-position: outside;
+}
+
+.about-me-list a {
+  text-decoration: var(--alt-color-text) underline .5px;
 }
 
 @media only screen and (max-width: 800px) {
   .about-me-list {
+    font-size: 1em;
     align-items: flex-start;
   }
 }
@@ -107,7 +137,7 @@
   background-color: rgba(var(--button-color), 0.6);
   font-size: 8pt;
   font-weight: 600;
-  font-family: IBM Plex Sans;
+  font-family: Poppins;
   color: var(--button-text);
   border: none;
   border-radius: 2px;
@@ -117,19 +147,6 @@
 
 .theme-button:active {
   transform: translateY(4px);
-}
-
-.app a {
-  font-weight: 600;
-  color: var(--alt-color-text);
-}
-
-.app a:visited {
-  color: var(--color-text);
-}
-
-.app a:hover {
-  color: hotpink;
 }
 
 .git-link {
@@ -143,15 +160,15 @@
 }
 
 .app-title {
-  font-family: IBM Plex Sans;
+  font-family: IBM Plex sans;
   font-size: 10vmin;
   margin: 0.25em;
 }
 
 .tag-line {
   margin: 0;
-  font-size: 3.5vmin;
-  font-family: Tillana;
+  font-size: 3vmax;
+  font-family: Amatic SC;
   font-weight: 700;
 }
 
@@ -232,6 +249,10 @@
 .project-header {
   margin-top: .25em;
   margin-bottom: .25em;
+  font-size: 5vmax;
+  font-family: Amatic SC;
+  text-decoration: var(--alt-color-text) underline 1px;
+  font-weight: 700;
 }
 
 .project {
@@ -248,6 +269,11 @@
 .project p {
   margin-top: .5em;
   margin-bottom: .5em;
+}
+
+.project-title {
+  font-family: Amatic SC;
+  font-size: 2em;
 }
 
 .picture-frame {
@@ -271,6 +297,7 @@
 .picture-title {
   margin-top: .5em;
   padding-top: 1em;
+  font-family: Amatic SC;
 }
 
 .picture-text {
