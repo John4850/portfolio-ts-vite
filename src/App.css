@@ -236,6 +236,10 @@
   padding: .5em;
 }
 
+.copyright {
+  font-size: x-small;
+}
+
 .explanation {
   font-family: Lexend;
   margin-top: 0;

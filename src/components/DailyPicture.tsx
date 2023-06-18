@@ -39,10 +39,10 @@ const DailyPicture: React.FC<Props> = ({ pictureOfTheDay }) => {
               className="picture"
             />
           </picture>
-          <h6 className='copyright'>
+          <span className='copyright'>
             ©{pictureOfTheDay.date.slice(0, 4)}
             {pictureOfTheDay?.copyright}
-          </h6>
+          </span>
         </a>
       </div>
     );
