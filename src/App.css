@@ -53,7 +53,7 @@
   align-items: center;
   text-align: center;
   justify-content: center;
-  font-family: open-dyslexic;
+  font-family: open-dyslexic, Arial, Helvetica, sans-serif;
   padding: 2rem;
   color: var(--color-text);
   box-sizing: border-box;
@@ -107,7 +107,7 @@
 }
 
 .about-me-list {
-  font-family: open-dyslexic;
+  font-family: open-dyslexic, Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
