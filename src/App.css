@@ -6,13 +6,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tillana:wght@400;500&display=swap');
 
+@font-face {
+  font-family: open-dyslexic;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open-Dyslexic'),
+    url(https://fonts.cdnfonts.com/s/29616/open-dyslexic.woff) format('woff');
+  font-display: swap;
+}
+
 
 #root {
   --color-text: black;
   --color-background: radial-gradient(circle at bottom center, rgb(143, 246, 222), lightblue, rgb(255, 255, 255), rgb(95, 100, 255));
   --alt-color-text: rgb(55, 0, 33);
-  --button-color: 0, 0, 0;
-  --button-text: lightblue;
+  --button-color: rgb(0, 0, 100);
+  --button-text: rgb(255, 225, 250);
   --border-color: rgb(0, 38, 255);
   --background-gradient: 255, 255, 255;
   width: 100vw;
@@ -24,9 +33,9 @@
   --color-background: radial-gradient(circle at bottom center, rgb(100, 0, 100), rgb(50, 0, 75), rgb(0, 0, 100), black);
   --color-text: rgb(255, 225, 250);
   --alt-color-text: rgb(255, 226, 200);
-  --button-color: 255, 255, 255;
-  --button-text: black;
-  --border-color: lightblue;
+  --button-color: lightblue;
+  --button-text: rgb(0, 0, 0);
+  --border-color: rgb(175, 235, 255);
   --background-gradient: 0, 0, 0;
 }
 
@@ -46,7 +55,7 @@
   align-items: center;
   text-align: center;
   justify-content: center;
-  font-family: open-dyslexic;
+  font-family: open-dyslexic, Arial, Helvetica, sans-serif;
   padding: 2rem;
   color: var(--color-text);
   box-sizing: border-box;
@@ -100,7 +109,7 @@
 }
 
 .about-me-list {
-  font-family: open-dyslexic;
+  font-family: open-dyslexic, Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -130,10 +139,10 @@
 }
 
 .theme-button {
-  background-color: rgba(var(--button-color), 0.6);
+  background-color: var(--button-color);
   font-size: 8pt;
   font-weight: 600;
-  font-family: Poppins;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   color: var(--button-text);
   border: none;
   border-radius: 2px;
@@ -150,13 +159,14 @@
   max-height: 24px;
   width: 1rem;
 }
+
 .bffa-icon {
   height: 1rem;
   width: 1rem;
 }
 
 .app-title {
-  font-family: IBM Plex sans;
+  font-family: IBM Plex sans, 'Times New Roman', Times, serif;
   font-size: 10vmin;
   margin: 0.25em;
 }
@@ -164,14 +174,14 @@
 .tag-line {
   margin: 0;
   font-size: 3vmax;
-  font-family: Lexend;
+  font-family: Lexend, Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
 
 .empathetech-tag-line {
   margin: 0;
   font-size: 3vmax;
-  font-family: Amatic SC;
+  font-family: Amatic SC, Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
 
@@ -216,6 +226,7 @@
 .card {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 98%;
   border-radius: 10px;
   background: rgba(var(--background-gradient), .3);
@@ -225,16 +236,21 @@
   padding: .5em;
 }
 
+.copyright {
+  font-size: x-small;
+}
+
 .explanation {
   font-family: Lexend;
   margin-top: 0;
   padding: 1em;
+  max-width: 60vw;
 }
 
 .image {
   width: 1200px;
   max-width: 70vw;
-  height: auto;
+  height: 100%;
   border-radius: 10px;
   box-shadow: 1px -1px 3px -1px var(--border-color), -1px 1px 3px -1px var(--alt-color-text);
 }
@@ -242,7 +258,6 @@
 .logo {
   height: 5em;
   max-height: 100px;
-  padding: 1.5em;
 }
 
 .logo:hover {
@@ -253,7 +268,7 @@
   margin-top: .25em;
   margin-bottom: .25em;
   font-size: 5vmax;
-  font-family: Amatic SC;
+  font-family: Amatic SC, Arial, Helvetica, sans-serif;
   text-decoration: var(--alt-color-text) underline 1px;
   font-weight: 700;
 }
@@ -270,9 +285,13 @@
 }
 
 .project-list {
+  margin: .5em 0 .5em 0;
   list-style: none;
   padding: 0;
-  margin: 0;
+}
+
+.project-list li {
+  margin: .5em 0 .5em 0;
 }
 
 .project p {
@@ -281,7 +300,7 @@
 }
 
 .project-title {
-  font-family: open-dyslexic;
+  font-family: Lexend;
   font-size: 1.5em;
 }
 
@@ -297,6 +316,12 @@
   box-shadow: 2px -2px 5px -2px var(--border-color), -2px 2px 5px -2px var(--alt-color-text);
 }
 
+.picture-of-the-day {
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 5px;
+}
+
 .picture {
   width: 100%;
   max-width: 1200px;
@@ -306,7 +331,8 @@
 .picture-title {
   margin-top: .5em;
   padding-top: 1em;
-  font-family: Amatic SC;
+  font-size: 1.75em;
+  font-family: Amatic SC, Arial, Helvetica, sans-serif;
 }
 
 .picture-text {
@@ -346,7 +372,6 @@
     animation-fill-mode: backwards;
   }
 
-  /* Glow In */
   .animate.glow {
     animation-name: animate-glow;
     animation-timing-function: ease;
@@ -363,6 +388,80 @@
       opacity: 1;
       filter: brightness(1) saturate(1);
       transform: scale(1, 1);
+    }
+  }
+
+  .wiggle {
+    animation-name: wiggle;
+    animation-duration: 0.75s;
+    animation-timing-function: ease;
+  }
+
+  .slide-right {
+    animation-name: cd-bounce-right;
+    animation-duration: 0.8s;
+    animation-timing-function: ease;
+  }
+
+  .slide-left {
+    animation-name: cd-bounce-left;
+    animation-duration: 0.8s;
+    animation-timing-function: ease;
+  }
+
+  @keyframes wiggle {
+    0% {
+      transform: rotate(10deg);
+    }
+
+    25% {
+      transform: rotate(-10deg);
+    }
+
+    50% {
+      transform: rotate(20deg);
+    }
+
+    75% {
+      transform: rotate(-5deg);
+    }
+
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  @keyframes cd-bounce-right {
+    0% {
+      opacity: .2;
+      transform: translateX(-200px);
+    }
+
+    60% {
+      opacity: .7;
+      transform: translateX(15px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes cd-bounce-left {
+    0% {
+      opacity: .2;
+      transform: translateX(200px);
+    }
+
+    60% {
+      opacity: .7;
+      transform: translateX(-15px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
     }
   }
 
@@ -385,18 +484,23 @@
   .delay-5 {
     animation-delay: 0.5s;
   }
+
   .delay-6 {
     animation-delay: 0.6s;
   }
+
   .delay-7 {
     animation-delay: 0.7s;
   }
+
   .delay-8 {
     animation-delay: 0.8s;
   }
+
   .delay-9 {
     animation-delay: 0.9s;
   }
+
   .delay-10 {
     animation-delay: 1.0s;
   }

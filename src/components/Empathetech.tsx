@@ -14,22 +14,30 @@ const Empathetech: React.FC<Props> = ({ theme }) => {
   return (
     <>
       <div className="card animate glow delay-2">
+        <h2 className="project-title">
+          {"🤗 empathetech.org"}
+        </h2>
         <a href="https://empathetech.org" target="_blank">
           <h3 className='project-header' title="Empathetech">
-            <img src={theme == "Dark" ? empathetechLogo : empathetechLogoWhite} className={'logo animate svg glow delay-5'} alt="Empathetech logo" />
+            <img
+              src={theme == "Dark" ? empathetechLogo : empathetechLogoWhite}
+              className={'logo animate svg glow delay-5'}
+              alt="Empathetech logo"
+              loading='lazy'
+            />
           </h3>
+          <span >
+            {"(pronounced “empathetic”)"}
+          </span>
+          <h4 className='empathetech-tag-line'>
+            {"A hug-o-tron community. Beep beep boop boop."}
+          </h4>
         </a>
-        <h5 >
-          {"(pronounced “empathetic”)"}
-        </h5>
-        <h4 className='empathetech-tag-line'>
-          {"A hug-o-tron community. Beep beep boop boop."}
-        </h4>
         <div className="project">
           <div className="alt-text">
-            <span className="grey-text">
+            <p className="grey-text">
               {"Personal contributions: "}
-            </span>
+            </p>
             <ul className="project-list">
               <li>
                 {"🤖 Created navigation bar, footer, and code of conduct components for the "}

@@ -29,7 +29,7 @@ const DarkMode: React.FC<Props> = ({ theme, setTheme }) => {
       setTheme(theme === "Light" ? "Dark" : "Light");
     }
   };
-  let emoji:string = (theme == "Light") ? "💡" : "🕶️";
+  let emoji: string = (theme == "Light") ? "💡" : "🌙";
   return (
     <div className="button-wrapper">
       <button className="theme-button" onClick={toggleTheme}>{`${emoji} ${theme}-Mode`}</button>
