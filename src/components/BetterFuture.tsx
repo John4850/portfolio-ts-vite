@@ -60,9 +60,15 @@ const BetterFuture: React.FC<Props> = ({ theme }) => {
             <h3 className="project-title">{"⚙️ Choropleth Map and Tooltip "}</h3>
           </a>
           <p className="grey-text">
+            <b>
             {"View scores from around the world at a glance"}
-            <br />
-            {"3 Dimensions, 4 Components and 60 indicators for over 160 countries"}
+            </b>
+          </p>
+          <p className="alt-text">
+            {"Measuring 169 countries "}
+            {"3 dimensions "} 
+            {"4 components "}
+            {"60 indicators in total"}
           </p>
           <a href="https://betterfutureforall.netlify.app/" target="_blank" className='project-frame'>
             {worldImg}
@@ -91,7 +97,7 @@ const BetterFuture: React.FC<Props> = ({ theme }) => {
 
         <div className="project">
           <a href="https://bffa-definitions.netlify.app/" title="open in new window" target="_blank">
-            <h3 className="project-title">{"📖 Definitions Stamp-Book"}</h3>
+            <h3 className="project-title">{bffaImg}{" BFFA Stamp Book"}</h3>
           </a>
           <p className="grey-text">
             {"Explore each component's definition and sources"}
