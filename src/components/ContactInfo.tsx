@@ -20,24 +20,24 @@ const ContactInfo: React.FC<Props> = ({ theme, isVisible, myRef }) => {
       <p className="alt-text">
         {"Want to know more? Let's connect!"}
       </p>
-      <div className='resume animate glow delay-1'>
+      <div className='resume wiggle delay-1'>
         <a href="https://drive.google.com/file/d/1erporqoScv8UuoXKucAd5JxeElHaMYNP/view?usp=sharing" target="_blank">
-          <img src={theme == "Dark" ? resume : resumeWhite} className={`resume-logo ${isVisible ? 'animate glow delay-1' : ''}`} alt="Resume link" title="Resume" />
+          <img src={theme == "Dark" ? resume : resumeWhite} className={`resume-logo ${isVisible ? 'wiggle delay-1' : ''}`} alt="Resume link" title="Resume" />
         </a>
       </div>
       <div id="" className="contact-info" ref={myRef} >
         <a href="https://github.com/John4850" target="_blank" className="contact-link">
-          <img src={theme == "Dark" ? githubMark : githubMarkWhite} className={`contact-logo ${isVisible ? 'animate glow delay-2' : ''}`} alt="GitHub logo" title='GitHub' />
+          <img src={theme == "Dark" ? githubMark : githubMarkWhite} className={`contact-logo ${isVisible ? 'wiggle delay-2' : ''}`} alt="GitHub logo" title='GitHub' />
         </a>
         <a href={`mailto:${email}`} target="_blank" className="contact-link">
-          <img src={emailLogo} className={`contact-logo ${isVisible ? 'animate glow delay-3' : ''}`} alt="Email" title="Email" />
+          <img src={emailLogo} className={`contact-logo ${isVisible ? 'wiggle delay-3' : ''}`} alt="Email" title="Email" />
         </a>
         <a href="https://www.linkedin.com/in/johnnelson4850/" target="_blank" className="contact-link">
-          <img src={linkedInLogo} className={`contact-logo ${isVisible ? 'animate glow delay-4' : ''}`} alt="LinkedIn link" title='LinkedIn'/>
+          <img src={linkedInLogo} className={`contact-logo ${isVisible ? 'wiggle delay-4' : ''}`} alt="LinkedIn link" title='LinkedIn'/>
         </a>
       </div>
       <a href="https://www.instagram.com/johnnelson4850/" target="_blank" className="contact-link" title="Instagram">
-        <img src={instagramLogo} className={`contact-logo ${isVisible ? 'animate glow delay-5' : ''}`} alt="Instagram logo" />
+        <img src={instagramLogo} className={`contact-logo ${isVisible ? 'wiggle delay-5' : ''}`} alt="Instagram logo" />
       </a>
     </>
   )

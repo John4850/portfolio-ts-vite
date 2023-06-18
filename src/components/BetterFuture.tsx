@@ -17,7 +17,7 @@ const BetterFuture: React.FC<Props> = ({ theme }) => {
   const getImg = <img src={theme == "Dark" ? githubMark : githubMarkWhite} className={`git-link`} alt="GitHub logo" />
 
   const bffaImg = <img src={bffaIcon} alt='better future for all icon' className='bffa-icon' />
-  
+
   const worldImg = (
     <picture>
       <source srcSet={worldMapWebP} type="image/webp" />
@@ -38,35 +38,41 @@ const BetterFuture: React.FC<Props> = ({ theme }) => {
     <>
       <div className="card animate glow delay-2">
 
-        <h3 className="project-title" title="bffa.org">
-          <a href="https://bffa.org/" target="_blank">
+        <a href="https://bffa.org/" target="_blank">
+          <h3 className="project-title" title="bffa.org">
             {bffaImg}
             {" Better Future For All "}
-          </a>
-        </h3>
+          </h3>
+          <h5 >
+            {"(BFFA.org)"}
+          </h5>
+        </a>
 
-        <p className="explanation">
+        <span className="explanation">
           {"Using art to promote measuring and improving a society's ability to meet people's basic needs, empower communities, and unlock individual potential."}
-          <br />
-          <br />
+        </span>
+        <p className="alt-text">
           {"I created intuitive tools for exploring the"}
           <a href="http://www.socialprogress.org/framework" target="_blank">{" SPI framework "}</a>
           {"from the"}
           <a href="http://socialprogress.org/" target="_blank">{" Social Progress Imperative "}</a>
-        </p>
+          </p>
 
         <div className="project">
           <a href="https://betterfutureforall.netlify.app/" title="open in new window" target="_blank">
-            <h3 className="project-title">{"⚙️ Choropleth Map and Tooltip "}</h3>
+            <h3 className="project-title">
+              {bffaImg}
+              {" BFFA Map and Tooltip "}
+            </h3>
           </a>
           <p className="grey-text">
             <b>
-            {"View scores from around the world at a glance"}
+              {"View scores from around the world at a glance"}
             </b>
           </p>
           <p className="alt-text">
             {"Measuring 169 countries "}
-            {"3 dimensions "} 
+            {"3 dimensions "}
             {"4 components "}
             {"60 indicators in total"}
           </p>

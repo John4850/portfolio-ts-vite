@@ -216,6 +216,7 @@
 .card {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 98%;
   border-radius: 10px;
   background: rgba(var(--background-gradient), .3);
@@ -229,6 +230,7 @@
   font-family: Lexend;
   margin-top: 0;
   padding: 1em;
+  max-width: 60vw;
 }
 
 .image {
@@ -242,7 +244,6 @@
 .logo {
   height: 5em;
   max-height: 100px;
-  padding: 1.5em;
 }
 
 .logo:hover {
@@ -270,9 +271,13 @@
 }
 
 .project-list {
+  margin: .5em 0 .5em 0;
   list-style: none;
   padding: 0;
-  margin: 0;
+}
+
+.project-list li {
+  margin: .5em 0 .5em 0;
 }
 
 .project p {
@@ -281,7 +286,7 @@
 }
 
 .project-title {
-  font-family: open-dyslexic;
+  font-family: Lexend;
   font-size: 1.5em;
 }
 
@@ -295,6 +300,11 @@
   border-radius: 10px;
   background: rgba(var(--background-gradient), .3);
   box-shadow: 2px -2px 5px -2px var(--border-color), -2px 2px 5px -2px var(--alt-color-text);
+}
+.picture-of-the-day {
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 5px;
 }
 
 .picture {
@@ -346,7 +356,6 @@
     animation-fill-mode: backwards;
   }
 
-  /* Glow In */
   .animate.glow {
     animation-name: animate-glow;
     animation-timing-function: ease;
@@ -363,6 +372,62 @@
       opacity: 1;
       filter: brightness(1) saturate(1);
       transform: scale(1, 1);
+    }
+  }
+
+  .wiggle {
+    animation-name: wiggle;
+    animation-duration: 0.75s;
+    animation-timing-function: ease;
+  }
+
+  .slide-right {
+    animation-name: cd-bounce-right;
+    animation-duration: 0.8s;
+    animation-timing-function: ease;
+  }
+
+  .slide-left {
+    animation-name: cd-bounce-left;
+    animation-duration: 0.8s;
+    animation-timing-function: ease;
+  }
+
+  @keyframes wiggle {
+    0% {transform: rotate(10deg);}
+    25% {transform: rotate(-10deg);}
+    50% {transform: rotate(20deg);}
+    75% {transform: rotate(-5deg);}
+    100% {transform: rotate(0deg);}
+  }
+
+  @keyframes cd-bounce-right {
+    0% {
+      opacity: .2;
+      transform: translateX(-200px);
+    }
+    60% {
+      opacity: .7;
+      transform: translateX(15px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes cd-bounce-left {
+    0% {
+      opacity: .2;
+      transform: translateX(200px);
+    }
+    60% {
+      opacity: .7;
+      transform: translateX(-15px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
     }
   }
 
