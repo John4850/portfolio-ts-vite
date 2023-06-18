@@ -178,7 +178,7 @@
 .empathetech-tag-line {
   margin: 0;
   font-size: 3vmax;
-  font-family: Amatic SC;
+  font-family: Amatic SC, Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
 
@@ -261,7 +261,7 @@
   margin-top: .25em;
   margin-bottom: .25em;
   font-size: 5vmax;
-  font-family: Amatic SC;
+  font-family: Amatic SC, Arial, Helvetica, sans-serif;
   text-decoration: var(--alt-color-text) underline 1px;
   font-weight: 700;
 }
@@ -323,7 +323,7 @@
 .picture-title {
   margin-top: .5em;
   padding-top: 1em;
-  font-family: Amatic SC;
+  font-family: Amatic SC, Arial, Helvetica, sans-serif;
 }
 
 .picture-text {
