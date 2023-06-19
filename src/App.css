@@ -311,6 +311,7 @@
 
 .picture-of-the-day {
   width: 100%;
+  aspect-ratio: 1/1;
   max-width: 1200px;
   border-radius: 5px;
 }
