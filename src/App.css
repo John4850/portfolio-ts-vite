@@ -242,10 +242,8 @@
 }
 
 .image {
-  width: 1200px;
-  height: auto;
-  max-height: 630px;
-  max-width: 70vw;
+  width: 70vw;
+  aspect-ratio: 16/9;
   border-radius: 10px;
   box-shadow: 1px -1px 3px -1px var(--border-color), -1px 1px 3px -1px var(--alt-color-text);
 }
