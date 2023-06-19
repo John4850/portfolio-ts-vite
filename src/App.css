@@ -206,15 +206,11 @@
 .contact-link:before {
   display: block;
   padding-top: 100%;
-
 }
 
 .contact-logo {
-  height: 100%;
-  width: 100%;
-  min-width: 60px;
-  max-width: 100px;
-  max-height: 100px;
+  width: 75px;
+  height: 75px;
 }
 
 .contact-logo:hover {
@@ -247,9 +243,9 @@
 
 .image {
   width: 1200px;
-  max-width: 70vw;
   height: auto;
   max-height: 630px;
+  max-width: 70vw;
   border-radius: 10px;
   box-shadow: 1px -1px 3px -1px var(--border-color), -1px 1px 3px -1px var(--alt-color-text);
 }
@@ -352,9 +348,8 @@
 }
 
 .resume-logo {
-  max-height: 75px;
-  max-width: 75px;
-  width: 100%;
+  height: 75px;
+  width: 75px;
 }
 
 .resume-logo:hover {
