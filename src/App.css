@@ -251,6 +251,7 @@
   width: 1200px;
   max-width: 70vw;
   height: auto;
+  max-height: 630px;
   border-radius: 10px;
   box-shadow: 1px -1px 3px -1px var(--border-color), -1px 1px 3px -1px var(--alt-color-text);
 }
