@@ -22,18 +22,18 @@ const BetterFuture: React.FC<Props> = ({ theme }) => {
 
   const worldImg = (
     <picture>
-      <source srcSet={worldMapWebP} type="image/webp" />
+      <source srcSet={worldMap} type="image/png" media="(min-width: 1000px)" />
       <source srcSet={worldMapSmallWebP} type="image/png" media="(max-width: 300px)" />
-      <source srcSet={worldMap} type="image/png" media="(min-width: 601px)" />
+      <source srcSet={worldMapWebP} type="image/webp" media="(min-width: 301px)"/>
       <img src={worldMapSmall} alt='World map and Tooltip' className='image' loading='lazy' />
     </picture>
   )
 
   const definitionsImg = (
     <picture>
-      <source srcSet={bffaDefinitionsWebP} type="image/webp" />
+      <source srcSet={bffaDefinitions} type="image/png" media="(min-width: 1000px)" />
       <source srcSet={bffaDefinitionsSmallWebP} type="image/webp" media="(max-width: 300px)" />
-      <source srcSet={bffaDefinitions} type="image/png" media="(min-width: 601px)" />
+      <source srcSet={bffaDefinitionsWebP} type="image/webp" media="(min-width: 301px)"/>
       <img src={bffaDefinitionsSmall} alt='Definitions stamp book' className='image' loading='lazy' />
     </picture>
   )
