@@ -20,8 +20,11 @@ const ContactInfo: React.FC<Props> = ({ theme, isVisible, myRef }) => {
       <p className="alt-text">
         {"Want to know more? Let's connect!"}
       </p>
-      <div className='resume wiggle delay-1'>
+      <div className={`resume ${isVisible ? 'wiggle delay-1' : ''}`}>
         <a href="https://drive.google.com/file/d/1erporqoScv8UuoXKucAd5JxeElHaMYNP/view?usp=sharing" target="_blank">
+          <span className={`copyright ${isVisible ? 'wiggle delay-1' : ''}`}>
+            {"{ resume }"}
+          </span>
           <img src={theme == "Dark" ? resume : resumeWhite} className={`resume-logo ${isVisible ? 'wiggle delay-1' : ''}`} alt="Resume link" title="Resume" />
         </a>
       </div>
@@ -33,7 +36,7 @@ const ContactInfo: React.FC<Props> = ({ theme, isVisible, myRef }) => {
           <img src={emailLogo} className={`contact-logo ${isVisible ? 'wiggle delay-3' : ''}`} alt="Email" title="Email" />
         </a>
         <a href="https://www.linkedin.com/in/johnnelson4850/" target="_blank" className="contact-link">
-          <img src={linkedInLogo} className={`contact-logo ${isVisible ? 'wiggle delay-4' : ''}`} alt="LinkedIn link" title='LinkedIn'/>
+          <img src={linkedInLogo} className={`contact-logo ${isVisible ? 'wiggle delay-4' : ''}`} alt="LinkedIn link" title='LinkedIn' />
         </a>
       </div>
       <a href="https://www.instagram.com/johnnelson4850/" target="_blank" className="contact-link" title="Instagram">
