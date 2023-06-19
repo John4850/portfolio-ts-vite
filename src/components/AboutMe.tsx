@@ -1,6 +1,7 @@
 import bffaIcon from '../assets/bffa-icon.svg'
 import johnAndZuko from '../assets/john-and-zuko.jpg'
 import johnAndZukoSmall from '../assets/john-and-zuko-small.jpg'
+import johnAndZukoSmallWebP from '../assets/john-and-zuko-small.webp'
 import johnAndZukoWebP from '../assets/john-and-zuko.webp'
 
 interface Props {
@@ -29,8 +30,9 @@ const AboutMe: React.FC<Props> = ({ theme }) => {
       <div className='about-me card'>
         <h2 className='alt-text animate glow delay-2'>{"About Me"}</h2>
         <picture>
+          <source srcSet={johnAndZukoSmallWebP} type="image/webp" media="(max-width: 300px)"/>
+          <source srcSet={johnAndZuko} type="image/png" media="(min-width: 1000px)" />
           <source srcSet={johnAndZukoWebP} type="image/webp" />
-          <source srcSet={johnAndZuko} type="image/png" media="(min-width: 601px)" />
           <img src={johnAndZukoSmall} className="image" alt="John sitting on the ground with his dog laying across his lap" />
         </picture>
         {DESCRIPTION_TEXT}
